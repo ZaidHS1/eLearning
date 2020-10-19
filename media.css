@@ -1,0 +1,278 @@
+@media only screen and (max-width: 1455px) {
+  .word {
+    margin: 50px 200px 0 100px;
+  }
+
+  div.wo-ar h1 {
+    font-size: 3rem !important;
+  }
+
+  .nav-ar {
+    font-size: 0.94rem !important;
+  }
+}
+
+@media only screen and (max-width: 1351px) {
+  .word {
+    margin: 50px 100px 0 100px;
+  }
+}
+
+@media only screen and (max-width: 1256px) {
+  .word {
+    position: relative;
+    left: 0;
+    top: 100px;
+    font-size: 21px;
+  }
+
+  .wo-ar {
+    margin-right: 100px !important;
+    margin-left: 50px !important;
+  }
+
+  .logoImage {
+    height: 150px;
+  }
+
+  .card-title {
+    margin: 0 20px;
+  }
+
+  .card-deck {
+    display: block !important;
+  }
+
+  .card {
+    margin: 100px 15rem 0 15rem !important;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .form-control {
+    width: 180px !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    margin: 100px 100px 0 100px !important;
+  }
+
+  .wrapper {
+    margin: 30px 50px !important;
+  }
+
+  h1 {
+    font-size: 3rem !important;
+  }
+
+  ul {
+    font-size: 1.1rem !important;
+  }
+
+  .card {
+    margin: 100px 100px 0 100px !important;
+  }
+
+  .contact {
+    padding-top: 30px;
+    margin-left: 100px;
+  }
+
+  .logo {
+    height: 110px;
+  }
+
+  .royalLogo {
+    height: 90px;
+  }
+
+  .form-group .form-control {
+    left: 100px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .form-control {
+    width: 98% !important;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .location {
+    right: unset;
+    position: absolute;
+    bottom: unset;
+    left: 100px;
+    margin-top: 25px;
+  }
+
+  .location h3 {
+    position: static;
+  }
+
+  .loc-ar {
+    right: 100px !important;
+  }
+
+  #lastSection {
+    height: 33rem;
+  }
+
+  .form-group .form-control {
+    bottom: -265px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .wrapper {
+    margin: 30px 10px !important;
+  }
+
+  .liar {
+    right: 10px !important;
+  }
+
+  div.wo-ar h1 {
+    font-size: 2.5rem !important;
+  }
+
+  .wo-ar {
+    margin-right: 10px !important;
+  }
+
+  .word {
+    margin: 50px 10px 0 10px;
+  }
+
+  .logoImage {
+    left: 10px;
+  }
+
+  .map {
+    top: 200px;
+  }
+
+  .form-group .form-control {
+    position: relative;
+    bottom: -265px;
+    left: 100px;
+  }
+}
+
+@media only screen and (max-width: 552px) {
+  .word {
+    font-size: 15px;
+  }
+
+  .card-text {
+    font-size: 15px;
+  }
+
+  ul {
+    font-size: 15px !important;
+  }
+
+  .contact {
+    margin-left: 10px;
+  }
+
+  .location {
+    left: 10px;
+  }
+
+  .loc-ar {
+    right: 10px !important;
+  }
+
+  .last-ar {
+    padding-right: 10px;
+  }
+
+  .form-group .form-control {
+    position: relative;
+    bottom: -265px;
+    left: 10px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .card {
+    margin: 100px 50px 0 50px !important;
+  }
+
+  .elearnImg {
+    width: 70px;
+  }
+
+  .logoImage {
+    height: 120px;
+    top: -50px;
+  }
+
+  .service {
+    padding-left: 0;
+  }
+
+  .form-group .form-control {
+    bottom: -265px;
+    left: 10px;
+  }
+
+  .form-ar .form-control {
+    right: 80px;
+  }
+}
+@media only screen and (max-width: 488px) {
+  .logo {
+    height: 80px;
+  }
+
+  .royalLogo {
+    height: 60px;
+  }
+
+  #section1 {
+    height: 20rem;
+  }
+
+  .wrapper {
+    margin: 20px 10px !important;
+  }
+
+  #section2 {
+    height: 200px;
+    width: 13%;
+  }
+
+  #section3 {
+    height: 200px;
+    width: 81%;
+  }
+
+  .map {
+    height: 150px;
+    width: 250px;
+  }
+
+  #lastSection {
+    height: 30rem;
+    background-color: cadetblue;
+    position: relative;
+  }
+
+  .form-group .form-control {
+    bottom: -220px;
+  }
+}
+
+@media only screen and (max-width: 384px) {
+  h1 {
+    font-size: 36px !important;
+  }
+
+  .card {
+    margin: 100px 0px 0 0px !important;
+  }
+}
