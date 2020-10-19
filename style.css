@@ -197,6 +197,7 @@ ul {
 .mail {
   color: lightskyblue;
   margin-right: 70px;
+  margin-left: 70px;
 }
 .mail:hover {
   color: turquoise;
