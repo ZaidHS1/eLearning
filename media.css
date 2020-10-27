@@ -19,6 +19,11 @@
 }
 
 @media only screen and (max-width: 1256px) {
+  .contwrapper {
+    margin-left: 100px !important;
+    margin-right: 100px !important;
+  }
+
   .word {
     position: relative;
     left: 0;
@@ -60,7 +65,7 @@
   }
 
   .wrapper {
-    margin: 30px 50px !important;
+    margin: 80px 50px !important;
   }
 
   h1 {
@@ -82,6 +87,9 @@
 
   .logo {
     height: 110px;
+  }
+  .form-group {
+    margin-left: 20px;
   }
 
   .royalLogo {
@@ -112,6 +120,7 @@
     right: unset;
     position: absolute;
     bottom: unset;
+    top: unset;
     left: 100px;
     margin-top: 25px;
   }
@@ -125,6 +134,7 @@
   }
 
   #lastSection {
+    position: relative !important;
     height: 33rem;
   }
 
@@ -176,6 +186,17 @@
 
   .card-text {
     font-size: 15px;
+  }
+
+  .conMail {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .ContactWhats {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 50px;
   }
 
   ul {
@@ -265,7 +286,7 @@
   }
 
   #lastSection {
-    height: 30rem;
+    height: 33rem;
     background-color: cadetblue;
     position: relative;
   }

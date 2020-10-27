@@ -1,6 +1,13 @@
+html,
+body {
+  overflow-x: hidden;
+  min-height: 100%;
+  overflow-y: scroll;
+}
 body {
   background-color: rgb(248, 248, 248) !important;
   font-family: "Cairo", sans-serif !important;
+  border: 1px solid transparent;
 }
 
 h1 {
@@ -95,6 +102,36 @@ ul {
   margin-left: 10rem;
 }
 
+.conMail {
+  margin-left: 150px;
+}
+
+.ContactWhats {
+  margin-left: 108px;
+  margin-top: 50px;
+}
+
+.contwrapper {
+  padding-bottom: 100px;
+  margin: 110px 300px 0 300px !important;
+}
+
+.con-ar {
+  margin-right: 60px;
+}
+
+.con-ar .mail {
+  margin-right: 180px;
+}
+
+.conwh-ar {
+  margin-right: 160px;
+}
+
+.conwh-ar .whats {
+  margin-right: 83px;
+}
+
 .dropdown-menu {
   top: 98% !important;
 }
@@ -185,6 +222,11 @@ ul {
   padding-right: 100px;
 }
 
+.lastContact {
+  bottom: 0;
+  width: 100%;
+}
+
 .logo {
   height: 150px;
 }
@@ -196,7 +238,7 @@ ul {
 .location {
   right: 100px;
   position: absolute;
-  bottom: 30px;
+  top: 25px;
 }
 
 .location h3 {
@@ -280,6 +322,10 @@ ul {
   height: 500px;
 }
 
+.subhead {
+  margin: 10px 0 40px 0;
+}
+
 .topbar {
   font-family: "Cairo", sans-serif;
   font-size: 18px;
@@ -287,7 +333,7 @@ ul {
 
 .wrapper {
   font-family: "Cairo", sans-serif;
-  margin: 30px 100px !important;
+  margin: 30px 100px;
 }
 
 .wo-ar {
@@ -301,5 +347,13 @@ ul {
   position: absolute;
   top: 20px;
   left: 300px;
+}
+
+.whats {
+  color: lightskyblue;
+  margin-left: 111px;
+}
+.whats:hover {
+  color: turquoise;
 }
 /* ======================= Classes ==================== */
