@@ -1,5 +1,6 @@
 html,
 body {
+  scroll-behavior: smooth;
   overflow-x: hidden;
   min-height: 100%;
   overflow-y: scroll;
@@ -29,6 +30,11 @@ ul {
   font-size: 1.1rem;
 }
 
+ul li img {
+  margin: 5px 30px;
+  width: 130px;
+}
+
 /* ========================= ids ==================== */
 
 #section1 {
@@ -54,6 +60,14 @@ ul {
   height: 16rem;
   background-color: cadetblue;
   position: relative;
+}
+
+#filter {
+  position: relative;
+  left: 401px;
+  top: 65px;
+  width: 36%;
+  height: 40px;
 }
 /* ========================= ids ==================== */
 
@@ -145,6 +159,29 @@ ul {
   padding: 7px;
 }
 
+.formList {
+  min-height: 745.391px;
+  list-style-type: none;
+  padding: 0;
+  margin: 100px 0 0 0;
+}
+
+.formList .formElement {
+  border: 1px solid #ddd;
+  margin-top: 50px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 10px;
+  margin-left: 400px;
+  max-width: 70rem;
+}
+
+.formLink {
+  color: #000000;
+  font-size: 1.5rem;
+  vertical-align: 47px;
+  margin-left: 12px;
+}
+
 .form-group {
   position: absolute;
 }
@@ -173,8 +210,8 @@ ul {
   margin-top: 20px;
 }
 
-.nav-lang {
-  display: none;
+.highlight {
+  background-color: bisque !important;
 }
 
 .imgHolder {
@@ -277,6 +314,10 @@ ul {
   padding: 6px;
 }
 
+.nav-lang {
+  display: none;
+}
+
 .nav-item:hover {
   background-color: rgb(2, 92, 92);
 }
@@ -297,6 +338,41 @@ ul {
   margin: 10px 10px 0 0;
   float: right;
   height: 130px;
+}
+
+.sidenav {
+  width: 230px;
+  position: absolute;
+  z-index: 1;
+  top: 300px;
+  left: 10px;
+  background-color: rgb(45 88 90);
+  overflow-x: hidden;
+  padding: 8px 0;
+  border-radius: 0px 5px 5px 0px;
+  -moz-border-radius: 0px 5px 5px 0px;
+  -webkit-border-radius: 0px 5px 5px 0px;
+  border: 0px solid #000000;
+  margin-left: -10px;
+}
+
+.sidenav a {
+  padding: 20px 8px 15px 16px;
+  text-decoration: none;
+  font-size: 1.04rem;
+  color: #ffffff;
+  display: block;
+}
+
+.sidenav a:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #1b9197;
+}
+
+.sidenav hr {
+  margin: 0 !important;
+  border-top-color: rgba(238, 238, 238, 0.68) !important;
 }
 
 .sar {

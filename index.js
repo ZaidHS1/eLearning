@@ -1,7 +1,34 @@
 $(document).ready(function () {
-  var hrWidth = $("div ul div hr").width();
+
+  function getCurentFileName(){
+    var pagePathName= window.location.pathname;
+    return pagePathName.substring(pagePathName.lastIndexOf("/") + 1);
+}
+
+  if (getCurentFileName() == "index.html") {
+    var hrWidth = $("div ul div hr").width();
   $("hr").width(hrWidth);
   $("hr").css({ "margin-left": "0" });
+  }
+
+  $("#filter").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $(".formList li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+
+  $("d").click(function(){
+    $("p:first").addClass("intro");
+  });
+
+  $('.sidenav a').click(function(){
+
+  $($(this).attr('href')).addClass("highlight").delay(1000).queue(function(){
+    $(this).removeClass("highlight").dequeue();
+  });
+ });
+  
 });
 
 $(window).scroll(function () {
