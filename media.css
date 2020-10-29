@@ -10,6 +10,14 @@
   .nav-ar {
     font-size: 0.94rem !important;
   }
+
+  .formList .formElement {
+    margin-left: 250px;
+  }
+
+  #filter {
+    left: 250px;
+  }
 }
 
 @media only screen and (max-width: 1351px) {
@@ -51,11 +59,23 @@
   .card {
     margin: 100px 15rem 0 15rem !important;
   }
+
+  .formList .formElement {
+    margin-left: 150px;
+  }
+
+  #filter {
+    left: 150px;
+  }
 }
 
 @media only screen and (max-width: 1160px) {
   .form-control {
     width: 180px !important;
+  }
+
+  .formLink {
+    font-size: 1.1rem;
   }
 }
 
@@ -99,6 +119,15 @@
   .form-group .form-control {
     left: 100px;
   }
+
+  .formList .formElement {
+    margin-left: 200px;
+  }
+
+  #filter {
+    top: 55px;
+    left: 200px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -112,6 +141,66 @@
 
   .form-group {
     display: none;
+  }
+  #filter {
+    top: -783px;
+  }
+  .formList {
+    position: relative;
+    top: -855px;
+  }
+
+  .sidenav {
+    top: 0;
+    left: -40px;
+    position: relative;
+  }
+
+  .wrapper {
+    max-height: 2700px;
+  }
+}
+
+@media only screen and (max-width: 945px) {
+  ul li img {
+    margin: 5px 2px;
+    width: 90px;
+  }
+
+  .formList {
+    top: -737px;
+  }
+
+  .sidenav a {
+    font-size: 0.8rem;
+  }
+
+  #filter {
+    top: -660px;
+  }
+
+  .wrapper {
+    max-height: 2100px;
+  }
+}
+
+@media only screen and (max-width: 849px) {
+  .sidenav {
+    display: none;
+  }
+
+  .formList {
+    top: -100px;
+  }
+
+  #filter {
+    top: -10px;
+    left: -30px;
+    width: 60%;
+  }
+
+  .formList .formElement {
+    margin-left: -30px;
   }
 }
 
@@ -176,6 +265,34 @@
     position: relative;
     bottom: -265px;
     left: 100px;
+  }
+
+  #filter {
+    top: 40px;
+    left: 0px;
+    width: 60%;
+  }
+
+  .formList {
+    top: -40px;
+  }
+
+  .formList .formElement {
+    margin-left: 0px;
+  }
+
+  .wrapper {
+    max-height: 2300px;
+  }
+
+  .formList .formElement {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 569px) {
+  .formLink {
+    font-size: 0.83rem;
   }
 }
 
@@ -293,6 +410,14 @@
 
   .form-group .form-control {
     bottom: -220px;
+  }
+
+  .formLink {
+    display: table-cell;
+  }
+
+  ul li img {
+    width: 72px;
   }
 }
 

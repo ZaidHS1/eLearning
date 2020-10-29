@@ -11,6 +11,7 @@ $(document).ready(function () {
   $("hr").css({ "margin-left": "0" });
   }
 
+   // search ================================================================
   $("#filter").on("keyup", function() {
     var value = $(this).val().toLowerCase();
     $(".formList li").filter(function() {
@@ -21,14 +22,26 @@ $(document).ready(function () {
   $("d").click(function(){
     $("p:first").addClass("intro");
   });
+ // search ================================================================
+
+  // highlight ================================================================
 
   $('.sidenav a').click(function(){
 
   $($(this).attr('href')).addClass("highlight").delay(1000).queue(function(){
     $(this).removeClass("highlight").dequeue();
   });
+
  });
-  
+
+  // highlight ================================================================
+
+  $(document).on('click', '.nav-item a', function (e) {
+    $(this).parent().addClass('active').siblings().removeClass('active');
+});
+
+
+
 });
 
 $(window).scroll(function () {
