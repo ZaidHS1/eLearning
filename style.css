@@ -62,7 +62,7 @@ ul li img {
 
 #lastSection {
   height: 16rem;
-  background-color: cadetblue;
+  background-color: #008c90;
   position: relative;
 }
 
@@ -181,6 +181,11 @@ ul li img {
   padding: 10px;
   margin-left: 400px;
   max-width: 70rem;
+}
+
+.forms-ar {
+  text-align: right;
+  margin-right: 330px;
 }
 
 .formLink {
@@ -310,8 +315,9 @@ ul li img {
 }
 
 .navbar {
+  z-index: 2;
   padding: 0 16px !important;
-  background-color: cadetblue;
+  background-color: #008c90;
 }
 
 .nav-link {
@@ -354,7 +360,7 @@ ul li img {
   z-index: 1;
   top: 300px;
   left: 10px;
-  background-color: rgb(230 230 230);
+  background-color: rgb(1 92 91);
   overflow-x: hidden;
   padding: 8px 0;
   border-radius: 0px 3px 3px 0px;
@@ -368,19 +374,23 @@ ul li img {
   padding: 20px 8px 15px 16px;
   text-decoration: none;
   font-size: 1.04rem;
-  color: #000000;
+  color: #ffffff;
   display: block;
 }
 
 .sidenav a:hover {
   text-decoration: none;
-  color: #ffffff;
-  background-color: #4b4b4b;
+  color: #000000;
+  background-color: #69b9bd;
 }
 
 .sidenav hr {
   margin: 0 !important;
   border-top-color: rgb(175 175 175 / 68%) !important;
+}
+
+.side-ar {
+  text-align: right;
 }
 
 .sar {
@@ -408,6 +418,10 @@ ul li img {
 
 .subhead {
   margin: 10px 0 40px 0;
+}
+
+.searchForm {
+  position: unset !important;
 }
 
 .topbar {

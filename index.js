@@ -31,7 +31,7 @@ $(document).ready(function () {
   $($(this).attr('href')).addClass("highlight").delay(1000).queue(function(){
     $(this).removeClass("highlight").dequeue();
   });
-
+        
  });
 
   // highlight ================================================================

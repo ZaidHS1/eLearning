@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="ar">
   <head>
     <!-- Required meta tags -->
@@ -190,111 +190,17 @@
         </div>
       </nav>
     </div>
-    <!-- ============================== Top Section ============================== -->
-
-    <div id="section1" class="infoar">
-      <img class="logoImage liar" src="../images/Logo.png" alt="Logo" />
-      <div class="about">
-        <div class="word wo-ar">
-          <h1>وكالة التعليم الإلكتروني</h1>
-
-          <p>
-            التعليم الإلكتروني هو عملية التعلم التي تحدث باستخدام الإنترنت
-            وتقنيات التعلم لتقديم المواد التعليمية والدراسية وتسمح بالتواصل بين
-            أعضاء هيئة التدريس والطلاب، وبين الطلاب والطلاب، والطلاب والمواد
-            التعليمية. يعمل قطاع كليات ومعاهد الهيئة الملكية بالجبيل على دمج
-            التكنولوجيا في الاستراتيجيات التربوية التعليمية للقطاعات.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="wrapper">
-      <div class="cards card-deck">
-        <div class="card obj">
-          <div class="imgHolder mx-auto">
-            <img
-              class="elearnImg mx-auto"
-              src="../images/objective.png"
-              class="card-img-top"
-              alt="objective"
-            />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">هدفنا</h5>
-            <p class="card-text">
-              دمج التكنولوجيا في العمليات التربوية والتعليمية لقطاع كليات ومعاهد
-              الهيئة الملكية في الجبيل
-            </p>
-          </div>
-        </div>
-        <div class="card vis">
-          <div class="imgHolder mx-auto">
-            <img
-              class="elearnImg mx-auto"
-              src="../images/vision.png"
-              class="card-img-top"
-              alt="vision"
-            />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">رؤيتنا</h5>
-            <p class="card-text">
-              دعم المؤسسات التعليمية للقطاعات وأعضائها من خلال تلبية احتياجاتهم
-              التكنولوجية ودعم أعضاء هيئة التدريس في عمل دورات وبرامج عالية
-              الجودة عبر الإنترنت لتحسين نتائج تعلم الطلاب وإنتاجيتهم.
-            </p>
-          </div>
-        </div>
-        <div class="card mis">
-          <div class="imgHolder mx-auto">
-            <img
-              class="elearnImg mx-auto"
-              src="../images/mission.png"
-              class="card-img-top"
-              alt="mission"
-            />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">مهمتنا</h5>
-            <p class="card-text">
-              لتوفير أعلى جودة من فرص التعلم عبر الإنترنت من خلال دعم أعضاء هيئة
-              التدريس والموظفين من خلال: التصميم التعليمي الفعال ، والتكامل
-              المناسب لتقنيات التعليم ، وتطوير الوسائط الرقمية التفاعلية المهنية
-              ، ونشر ودعم تقنيات التعليم والاتصال الجديدة.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="service sar">
-        <h1 class="mr-auto">خدمات وكالة التعليم الإلكتروني</h1>
-        <ul>
-          <hr />
-          <li>توفير الدعم الفني للتعليم الإلكتروني</li>
-          <hr />
-          <li>ورش عمل متعلقة بالتكنولوجيا وتدريب إلكتروني</li>
-          <hr />
-          <div style="display: inline-block">
-            <li>
-              تطوير مواد للتعيلم الإلكتروني لأعضاء هيئة التدريس والأقسام
-              الأكاديمية والإدارية
-            </li>
-            <hr />
-          </div>
-          <li class="mr-auto">
-            توفير بيانات تحليلية عن إمكانية استخدام البلاك بورد.
-          </li>
-          <hr />
-          <li>تطوير مواد التعليم الإلكتروني للبرامج الخاصة.</li>
-          <hr />
-          <li>توفير دورات ضخمة ومفتوحة عبر الإنترنت (MOOCs) للمجتمع.</li>
-          <hr />
-          <li>توفير معامل للكمبيوتر المحمول.</li>
-          <hr />
-        </ul>
-      </div>
-    </div>
-
+    <!-- ============================== Top Section ============================== --> 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
     <!-- ============================== Top Section ============================== -->
 
     <div id="lastSection" class="last-ar">

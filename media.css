@@ -1,3 +1,8 @@
+@media only screen and (max-width: 1721px) {
+  .forms-ar {
+    margin-right: unset;
+  }
+}
 @media only screen and (max-width: 1455px) {
   .word {
     margin: 50px 200px 0 100px;
@@ -143,17 +148,15 @@
     display: none;
   }
   #filter {
-    top: -783px;
+    top: 69px;
   }
-  .formList {
-    position: relative;
-    top: -855px;
+  .forms-ar {
+    top: 49px !important;
   }
-
   .sidenav {
-    top: 0;
-    left: -40px;
-    position: relative;
+    position: absolute;
+    top: 300px;
+    left: 10px;
   }
 
   .wrapper {
@@ -175,8 +178,8 @@
     font-size: 0.8rem;
   }
 
-  #filter {
-    top: -660px;
+  .formElement {
+    margin-top: 20px !important;
   }
 
   .wrapper {
@@ -190,7 +193,12 @@
   }
 
   .formList {
+    margin: 0;
     top: -100px;
+  }
+
+  .forms-ar {
+    top: -50px !important;
   }
 
   #filter {
@@ -274,6 +282,7 @@
   }
 
   .formList {
+    margin-top: 70px;
     top: -40px;
   }
 
