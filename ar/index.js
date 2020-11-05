@@ -1,8 +1,11 @@
 $(document).ready(function () {
+
+  if ($('.home').length) {
   var hrWidth = $("div ul div hr").width();
-  $("hr").width(hrWidth);
-  $("hr").css({ "margin-left": "0" });
-});
+$("hr").width(hrWidth);
+$("hr").css({ "margin-left": "0" });
+}
+
 
 
    // search ================================================================
@@ -42,4 +45,6 @@ $(window).scroll(function () {
   if (scroll >= 600) {
     $(".service").addClass("fadeinleft");
   }
+});
+
 });
