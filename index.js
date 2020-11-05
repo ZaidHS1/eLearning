@@ -1,17 +1,18 @@
-$(document).ready(function () {
 
-  function getCurentFileName(){
-    var pagePathName= window.location.pathname;
-    return pagePathName.substring(pagePathName.lastIndexOf("/") + 1);
+function getCurentFileName(){
+  var pagePathName= window.location.pathname;
+  return pagePathName.substring(pagePathName.lastIndexOf("/") + 1);
 }
 
-  if (getCurentFileName() == "index.html") {
-    var hrWidth = $("div ul div hr").width();
-  $("hr").width(hrWidth);
-  $("hr").css({ "margin-left": "0" });
-  }
+if (getCurentFileName() == "index.html") {
+  var hrWidth = $("div ul div hr").width();
+$("hr").width(hrWidth);
+$("hr").css({ "margin-left": "0" });
+}
 
-   // search ================================================================
+
+$(document).ready(function () {
+ // search ================================================================
   $("#filter").on("keyup", function() {
     var value = $(this).val().toLowerCase();
     $(".formList li").filter(function() {
