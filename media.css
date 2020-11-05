@@ -29,6 +29,11 @@
   .word {
     margin: 50px 100px 0 100px;
   }
+
+  form.fillingForm {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
 }
 
 @media only screen and (max-width: 1256px) {
@@ -185,6 +190,11 @@
   .wrapper {
     max-height: 2100px;
   }
+
+  form.fillingForm {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
 }
 
 @media only screen and (max-width: 849px) {
@@ -297,6 +307,11 @@
   .formList .formElement {
     margin-top: 10px;
   }
+
+  .inputs {
+    text-align: initial;
+    margin-left: 50px;
+  }
 }
 
 @media only screen and (max-width: 569px) {
@@ -349,6 +364,10 @@
     position: relative;
     bottom: -265px;
     left: 10px;
+  }
+
+  .inputs {
+    margin-left: 10px;
   }
 }
 
@@ -427,6 +446,11 @@
 
   ul li img {
     width: 72px;
+  }
+
+  textarea {
+    width: 90%;
+    height: 150px;
   }
 }
 
