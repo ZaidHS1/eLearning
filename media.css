@@ -369,6 +369,10 @@
   .inputs {
     margin-left: 10px;
   }
+
+  .bigTitle {
+    font-size: 36px !important;
+  }
 }
 
 @media only screen and (max-width: 520px) {

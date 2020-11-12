@@ -50,13 +50,17 @@ form.fillingForm {
   margin-top: 50px;
 }
 
+.fF-ar label {
+  text-align: right !important;
+}
+
 label {
   display: inline-block;
   width: 200px;
   text-align: left;
 }
 
-select.courseType,
+div.inputs select,
 input {
   width: 250px;
 }
@@ -84,7 +88,13 @@ input {
 
 #lastSection {
   height: 16rem;
-  background-color: #008c90;
+  background: rgb(0, 133, 186);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 133, 186, 1) 0%,
+    rgba(66, 166, 173, 1) 50%,
+    rgba(87, 184, 214, 1) 100%
+  );
   position: relative;
 }
 
@@ -125,7 +135,7 @@ input {
 }
 
 .active {
-  background-color: rgb(2, 92, 92);
+  background-color: rgb(1, 72, 100);
 }
 
 .card {
@@ -259,12 +269,16 @@ input {
   margin-top: 20px;
 }
 
+.fF-ar {
+  text-align: right;
+}
+
 .highlight {
   background-color: bisque !important;
 }
 
 .inputs {
-  margin: 25px 0 70px 0;
+  margin: 38px 0 70px 0;
   text-align: center;
 }
 
@@ -358,7 +372,13 @@ input {
 .navbar {
   z-index: 2;
   padding: 0 16px !important;
-  background-color: #008c90;
+  background: rgb(0, 133, 186);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 133, 186, 1) 0%,
+    rgba(66, 166, 173, 1) 50%,
+    rgba(66, 166, 173, 1) 100%
+  );
 }
 
 .nav-link {
@@ -374,7 +394,7 @@ input {
 }
 
 .nav-item:hover {
-  background-color: rgb(2, 92, 92);
+  background-color: rgb(1, 72, 100);
 }
 
 .navbar-dark .navbar-toggler {
@@ -401,7 +421,7 @@ input {
   z-index: 1;
   top: 300px;
   left: 10px;
-  background-color: rgb(1 92 91);
+  background-color: rgb(4, 142, 167);
   overflow-x: hidden;
   padding: 8px 0;
   border-radius: 0px 3px 3px 0px;
@@ -421,8 +441,8 @@ input {
 
 .sidenav a:hover {
   text-decoration: none;
-  color: #000000;
-  background-color: #69b9bd;
+  color: #fff;
+  background-color: rgb(4, 99, 116);
 }
 
 .sidenav hr {

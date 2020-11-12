@@ -37,7 +37,16 @@ $("hr").css({ "margin-left": "0" });
     $(this).parent().addClass('active').siblings().removeClass('active');
 });
 
+ $(".Devices").change(function(){
 
+  if ($(".Devices").val() == "Other") {
+    $("#OtherInput").show();
+    $("#other").prop('required',true);
+  }else{
+    $("#OtherInput").hide();
+    $("#other").prop('required',false);
+  }
+ });
 
 });
 
