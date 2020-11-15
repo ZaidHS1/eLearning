@@ -242,6 +242,10 @@ input {
   margin-right: 25px;
 }
 
+.fas {
+  pointer-events: none;
+}
+
 .formList {
   min-height: 745.391px;
   list-style-type: none;
