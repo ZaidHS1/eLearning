@@ -23,6 +23,10 @@
   #filter {
     left: 250px;
   }
+
+  .accordion {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 1351px) {
@@ -66,7 +70,7 @@
     display: block !important;
   }
 
-  .card {
+  .inf {
     margin: 100px 15rem 0 15rem !important;
   }
 
@@ -87,10 +91,14 @@
   .formLink {
     font-size: 1.1rem;
   }
+
+  .accordion {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
-  .card {
+  .inf {
     margin: 100px 100px 0 100px !important;
   }
 
@@ -106,7 +114,7 @@
     font-size: 1.1rem !important;
   }
 
-  .card {
+  .inf {
     margin: 100px 100px 0 100px !important;
   }
 
@@ -220,6 +228,10 @@
   .formList .formElement {
     margin-left: -30px;
   }
+
+  .accordion .card .card-header .card-link {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 830px) {
@@ -251,6 +263,10 @@
 }
 
 @media only screen and (max-width: 750px) {
+  h1 {
+    font-size: 2.5rem !important;
+  }
+
   .wrapper {
     margin: 30px 10px !important;
   }
@@ -376,7 +392,7 @@
 }
 
 @media only screen and (max-width: 520px) {
-  .card {
+  .inf {
     margin: 100px 50px 0 50px !important;
   }
 
@@ -460,10 +476,35 @@
 
 @media only screen and (max-width: 384px) {
   h1 {
-    font-size: 36px !important;
+    font-size: 30px !important;
   }
 
-  .card {
+  .inf {
     margin: 100px 0px 0 0px !important;
+  }
+}
+
+@media only screen and (max-width: 367px) {
+  .faqwrapper {
+    max-height: none;
+    height: 2400px !important;
+  }
+}
+
+@media only screen and (max-width: 341px) {
+  .faqwrapper {
+    height: 2500px !important;
+  }
+}
+
+@media only screen and (max-width: 329px) {
+  .faqwrapper {
+    height: 2600px !important;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .faqwrapper {
+    height: 2700px !important;
   }
 }

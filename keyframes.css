@@ -22,6 +22,14 @@
   animation: fadeinLeft 1s forwards 0s ease;
 }
 
+.arrow-down {
+  animation: arrowDown 0.3s forwards 0s ease;
+}
+
+.arrow-right {
+  animation: arrowRight 0.3s forwards 0s ease;
+}
+
 /* ---------------------------------------- */
 
 @keyframes fadein {
@@ -54,5 +62,23 @@
   100% {
     transform: rotate(0) translateX(0%);
     opacity: 1;
+  }
+}
+
+@keyframes arrowDown {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes arrowRight {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }

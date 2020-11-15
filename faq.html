@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="keyframes.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- ------- -->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <script
+      src="https://kit.fontawesome.com/9c49d18a34.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Start of Async Callbell Code -->
+    <script>
+      window.callbellSettings = {
+        token: "pVymHUatV8g4o8VbvHyYLLpo",
+      };
+    </script>
+    <script>
+      (function () {
+        var w = window;
+        var ic = w.callbell;
+        if (typeof ic === "function") {
+          ic("reattach_activator");
+          ic("update", callbellSettings);
+        } else {
+          var d = document;
+          var i = function () {
+            i.c(arguments);
+          };
+          i.q = [];
+          i.c = function (args) {
+            i.q.push(args);
+          };
+          w.Callbell = i;
+          var l = function () {
+            var s = d.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            s.src =
+              "https://dash.callbell.eu/include/" +
+              window.callbellSettings.token +
+              ".js";
+            var x = d.getElementsByTagName("script")[0];
+            x.parentNode.insertBefore(s, x);
+          };
+          if (w.attachEvent) {
+            w.attachEvent("onload", l);
+          } else {
+            w.addEventListener("load", l, false);
+          }
+        }
+      })();
+    </script>
+    <!-- End of Async Callbell Code -->
+
+    <title>e-Learning</title>
+  </head>
+
+  <body>
+    <div class="topbar">
+      <div class="form-group">
+        <select class="form-control" onchange="location = this.value;">
+          <option value="" disabled selected style="text-align: right">
+            اللغة
+          </option>
+          <option value="ar/forms.html">العربية</option>
+          <option value="">English</option>
+        </select>
+      </div>
+      <a href="index.html"
+        ><img class="logo" src="images/Logo.png" alt="logo"
+      /></a>
+      <img class="royalLogo" src="images/RoyalLogo.png" alt="Royal Logo" />
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="ture"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="forms.html">e-Learning Forms</a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://lms.cisjubail.gov.sa/"
+                target="_blank"
+                >Blackboard</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+
+            <li class="nav-item dropdown nav-lang">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Language
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="ar/contactus.html">العربية</a>
+                <a class="dropdown-item" href="#">English</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline ml-auto">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn searchBtn my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <!-- ============================== Top Section ============================== -->
+
+    <div class="wrapper faqwrapper">
+      <h1 style="text-align: center">Frequently Asked Questions</h1>
+      <div class="accordion" id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q1">
+              <i class="fas fa-chevron-right arrow-right"></i> Is Blackboard
+              browser specific? If it is then which browser should I use?
+            </a>
+          </div>
+
+          <div id="Q1" class="collapse" data-parent="#accordion">
+            <div class="card-body">Chrome or Firefox.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q2">
+              <i class="fas fa-chevron-right arrow-right"></i> How do I log in
+              to Blackboard for the first time?
+            </a>
+          </div>
+
+          <div id="Q2" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              You can log into blackboard by using your employee ID.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q3">
+              <i class="fas fa-chevron-right arrow-right"></i> I forgot my
+              password. What should I do?
+            </a>
+          </div>
+
+          <div id="Q3" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Use the forget password option or send email to:
+              <br />
+              elearning@jic.edu.sa
+              <br />
+              elearning@ucj.edu.sa
+              <br />
+              elearning@jti.edu.sa
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q4">
+              <i class="fas fa-chevron-right arrow-right"></i> How can I get
+              Blackboard courses for my classes?
+            </a>
+          </div>
+
+          <div id="Q4" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              You will have all your courses when the semester starts
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q5">
+              <i class="fas fa-chevron-right arrow-right"></i> How can I create
+              a course?
+            </a>
+          </div>
+
+          <div id="Q5" class="collapse" data-parent="#accordion">
+            <div class="card-body">You do not have to create a course</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q6">
+              <i class="fas fa-chevron-right arrow-right"></i> How should I add
+              different course material to my course?
+            </a>
+          </div>
+
+          <div id="Q6" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Check the different video tutorials on adding course materials
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q7">
+              <i class="fas fa-chevron-right arrow-right"></i> Can I add images
+              to my course details?
+            </a>
+          </div>
+
+          <div id="Q7" class="collapse" data-parent="#accordion">
+            <div class="card-body">Yes. Check the video tutorials.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q8">
+              <i class="fas fa-chevron-right arrow-right"></i> Can I create
+              hyperlinked pages for course details?
+            </a>
+          </div>
+
+          <div id="Q8" class="collapse" data-parent="#accordion">
+            <div class="card-body">Yes. Check the video tutorials.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q9">
+              <i class="fas fa-chevron-right arrow-right"></i> How can I add a
+              quiz?
+            </a>
+          </div>
+
+          <div id="Q9" class="collapse" data-parent="#accordion">
+            <div class="card-body">Check the video tutorials.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q10">
+              <i class="fas fa-chevron-right arrow-right"></i> Can I add images
+              or videos to my quiz or course?
+            </a>
+          </div>
+
+          <div id="Q10" class="collapse" data-parent="#accordion">
+            <div class="card-body">Yes. Check the video tutorials.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q11">
+              <i class="fas fa-chevron-right arrow-right"></i> How can I add the
+              date limit and time limit for my quiz?
+            </a>
+          </div>
+
+          <div id="Q11" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              When you create a test, in the test options you will find Due
+              Date. Under due date you can change the date and time limits.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q12">
+              <i class="fas fa-chevron-right arrow-right"></i> How can I add
+              questions to my quiz?
+            </a>
+          </div>
+
+          <div id="Q12" class="collapse" data-parent="#accordion">
+            <div class="card-body">Check the video tutorials.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q13">
+              <i class="fas fa-chevron-right arrow-right"></i> How should I
+              select questions randomly for my quiz?
+            </a>
+          </div>
+
+          <div id="Q13" class="collapse" data-parent="#accordion">
+            <div class="card-body">Check the video tutorials.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q14">
+              <i class="fas fa-chevron-right arrow-right"></i> How can I create
+              a key/password for my course?
+            </a>
+          </div>
+
+          <div id="Q14" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              You do not need one, as your students will already be there in the
+              course.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q15">
+              <i class="fas fa-chevron-right arrow-right"></i> How can I create
+              a key/password for my quiz?
+            </a>
+          </div>
+
+          <div id="Q15" class="collapse" data-parent="#accordion">
+            <div class="card-body">Check the video tutorials.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q16">
+              <i class="fas fa-chevron-right arrow-right"></i> Can I restrict
+              students to attempting a quiz only once?
+            </a>
+          </div>
+
+          <div id="Q16" class="collapse" data-parent="#accordion">
+            <div class="card-body">Yes</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q17">
+              <i class="fas fa-chevron-right arrow-right"></i> Can I create a
+              practice material/quiz that can be accessed any number of times?
+            </a>
+          </div>
+
+          <div id="Q17" class="collapse" data-parent="#accordion">
+            <div class="card-body">Yes</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q18">
+              <i class="fas fa-chevron-right arrow-right"></i> What are the
+              several types quiz questions that can be created?
+            </a>
+          </div>
+
+          <div id="Q18" class="collapse" data-parent="#accordion">
+            <div class="card-body">Check the video tutorials.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q19">
+              <i class="fas fa-chevron-right arrow-right"></i> Can I reuse a
+              course from a previous academic year/semester?
+            </a>
+          </div>
+
+          <div id="Q19" class="collapse" data-parent="#accordion">
+            <div class="card-body">Yes</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q20">
+              <i class="fas fa-chevron-right arrow-right"></i> After adding all
+              the material for my course, can I hide some of it from the
+              students.
+            </a>
+          </div>
+
+          <div id="Q20" class="collapse" data-parent="#accordion">
+            <div class="card-body">Yes</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q21">
+              <i class="fas fa-chevron-right arrow-right"></i> How do I create
+              sections for my course?
+            </a>
+          </div>
+
+          <div id="Q21" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              You will have a course for every sections in blackboard
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q22">
+              <i class="fas fa-chevron-right arrow-right"></i> Can students
+              enroll to specific sections for specific course?
+            </a>
+          </div>
+
+          <div id="Q22" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              No, they will already be in the courses automatically
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q23">
+              <i class="fas fa-chevron-right arrow-right"></i> How can I view
+              the results for specific sections?
+            </a>
+          </div>
+
+          <div id="Q23" class="collapse" data-parent="#accordion">
+            <div class="card-body">Check the video tutorials.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q24">
+              <i class="fas fa-chevron-right arrow-right"></i> Can I create an
+              attendance for my course?
+            </a>
+          </div>
+
+          <div id="Q24" class="collapse" data-parent="#accordion">
+            <div class="card-body">No</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q25">
+              <i class="fas fa-chevron-right arrow-right"></i> How do I enroll
+              students in my Blackboard course without enrolling them manually?
+            </a>
+          </div>
+
+          <div id="Q25" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              They will be in the course automatically, you do not have to
+              enroll them.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q26">
+              <i class="fas fa-chevron-right arrow-right"></i> How do I manually
+              enroll students in my Blackboard course?
+            </a>
+          </div>
+
+          <div id="Q26" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              They will be in the course automatically, you do not have to
+              enroll them.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q27">
+              <i class="fas fa-chevron-right arrow-right"></i> How can I add
+              maximum marks for my course?
+            </a>
+          </div>
+
+          <div id="Q27" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              You can have marks for individual assessments that will add up to
+              make a total for the course.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q28">
+              <i class="fas fa-chevron-right arrow-right"></i> How can I grade
+              my students?
+            </a>
+          </div>
+
+          <div id="Q28" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Students are graded automatically for every assessment, but you
+              can grade them manually also.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q29">
+              <i class="fas fa-chevron-right arrow-right"></i> How can I backup
+              my course?
+            </a>
+          </div>
+
+          <div id="Q29" class="collapse" data-parent="#accordion">
+            <div class="card-body">Check the video tutorial.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q30">
+              <i class="fas fa-chevron-right arrow-right"></i> How can I backup
+              the results?
+            </a>
+          </div>
+
+          <div id="Q30" class="collapse" data-parent="#accordion">
+            <div class="card-body">Check the video tutorial.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q31">
+              <i class="fas fa-chevron-right arrow-right"></i> How can I create
+              calendar event for my course quizzes/assignments and exams?
+            </a>
+          </div>
+
+          <div id="Q31" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              When you create items with due dates, such as tests or
+              assignments, the calendar event automatically appears on the
+              course calendar for that day.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q32">
+              <i class="fas fa-chevron-right arrow-right"></i> How can I import
+              a course?
+            </a>
+          </div>
+
+          <div id="Q32" class="collapse" data-parent="#accordion">
+            <div class="card-body">Check the video tutorials.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q33">
+              <i class="fas fa-chevron-right arrow-right"></i> How can I export
+              a course?
+            </a>
+          </div>
+
+          <div id="Q33" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              You will use the same file to import that you exported.
+              <br />
+              Click Packages and utilities under “Course Management”.
+              <br />
+              Click Import Package / View Logs.
+              <br />
+              Click Import Package.
+              <br />
+              Click “Browse My computer” and select the file that you exported.
+              <br />
+              Select the options under “course material”.
+              <br />
+              Click submit.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q34">
+              <i class="fas fa-chevron-right arrow-right"></i> How can I create
+              and update a forum for specific course?
+            </a>
+          </div>
+
+          <div id="Q34" class="collapse" data-parent="#accordion">
+            <div class="card-body">Check the video tutorials.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q35">
+              <i class="fas fa-chevron-right arrow-right"></i> How can I email
+              or message my students in a course?
+            </a>
+          </div>
+
+          <div id="Q35" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Go to Course Management.
+              <br />
+              Click Course Tools.
+              <br />
+              Select Send Email.
+              <br />
+              Click All Student Users.
+              <br />
+              Type in the Subject and Message.
+              <br />
+              Click submit.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q36">
+              <i class="fas fa-chevron-right arrow-right"></i> Can I manually
+              grade my students in some of the questions that need detail
+              answers?
+            </a>
+          </div>
+
+          <div id="Q36" class="collapse" data-parent="#accordion">
+            <div class="card-body">Yes. Check the video tutorials.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#Q37">
+              <i class="fas fa-chevron-right arrow-right"></i> How can I upload
+              files for a course or an Assignment?
+            </a>
+          </div>
+
+          <div id="Q37" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              You can upload different files for a course and assignments, check
+              the video tutorials.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================= Bottom Section ============================= -->
+
+    <div id="lastSection" class="lastContact">
+      <div class="contact">
+        <h3>Contact Us</h3>
+        <h5>E-mail:</h5>
+        <a class="mail" href="mailto:elearning@jic.edu.sa"
+          >elearning@jic.edu.sa</a
+        >
+        <br />
+        <a class="mail" href="mailto:elearning@ucj.edu.sa"
+          >elearning@ucj.edu.sa</a
+        >
+        <br />
+        <a class="mail" href="mailto:elearning@jti.edu.sa"
+          >elearning@jti.edu.sa</a
+        >
+      </div>
+
+      <div class="location">
+        <h3>Location</h3>
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1203.4974097941677!2d49.56601222923024!3d27.108071992722866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e350fba56d39dc7%3A0x900a45eac9dc3b45!2z2YXYsdmD2LIg2KfZhNiq2LnZhNmK2YUg2KfZhNil2YTZg9iq2LHZiNmG2Yog2YTZhNi62Kkg2KfZhNil2YbYrNmE2YrYstmK2Kk!5e1!3m2!1sen!2ssa!4v1603266953066!5m2!1sen!2ssa"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+    </div>
+
+    <p class="rights"></p>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -48,6 +48,36 @@ $("hr").css({ "margin-left": "0" });
   }
  });
 
+// ========================= FAQ arrow ====================
+
+$(".card-header a").click(function() {
+
+  var obj = $(this);
+  
+  setTimeout(
+    function()
+    {
+      var myClass = obj.attr("class")
+      if (myClass.match("collapsed")) {
+        
+        obj.find(".fas").removeClass("arrow-down");
+        obj.find(".fas").addClass("arrow-right");
+        
+      } else{
+          $(".fas").removeClass("arrow-down");
+
+        obj.find(".fas").removeClass("arrow-right");
+        obj.find(".fas").addClass("arrow-down");
+      }
+    }, 0.01);
+
+    
+
+});
+
+
+
+// ========================= FAQ arrow ====================
 });
 
 $(window).scroll(function () {
