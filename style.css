@@ -134,6 +134,12 @@ input {
   color: #41a6ac;
 }
 
+.arrowImage {
+  height: 15px;
+  display: inline;
+  margin-right: 20px;
+}
+
 .about {
   color: white;
   position: relative;
