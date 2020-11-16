@@ -61,9 +61,10 @@ $(".card-header a").click(function() {
       if (myClass.match("collapsed")) {
         
         obj.find(".fas").removeClass("arrow-down");
-        obj.find(".fas").addClass("arrow-right");
+        
         
       } else{
+         $(".fas").addClass("arrow-right");
           $(".fas").removeClass("arrow-down");
          
 
