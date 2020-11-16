@@ -65,6 +65,7 @@ $(".card-header a").click(function() {
         
       } else{
           $(".fas").removeClass("arrow-down");
+         
 
         obj.find(".fas").removeClass("arrow-right");
         obj.find(".fas").addClass("arrow-down");
