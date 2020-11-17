@@ -33,9 +33,14 @@ $(document).ready(function () {
 
   // ========================= Change Active Tab On Navbar ====================
 
-  $(document).on("click", ".nav-item a", function (e) {
-    $(this).parent().addClass("active").siblings().removeClass("active");
+  $(".nav-item a").click(function (e) {
+    if (!$(this).text() == "Blackboard") {
+      $(this).parent().addClass("active").siblings().removeClass("active");
+    }
   });
+  // ========================= Change Active Tab On Navbar ====================
+
+  // ========================= Forms Select Tag Other field ====================
 
   $(".Devices").change(function () {
     if ($(".Devices").val() == "Other") {
@@ -47,7 +52,7 @@ $(document).ready(function () {
     }
   });
 
-  // ========================= Change Active Tab On Navbar ====================
+  // ========================= Forms Select Tag Other field ====================
 
   // ========================= FAQ arrow ====================
 
