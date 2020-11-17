@@ -1,85 +1,71 @@
 $(document).ready(function () {
-  
+  if ($(".home").length) {
+    var hrWidth = $("div ul div hr").width();
+    $("hr").width(hrWidth);
+    $("hr").css({ "margin-left": "0" });
+  }
 
-if ($('.home').length) {
-  var hrWidth = $("div ul div hr").width();
-$("hr").width(hrWidth);
-$("hr").css({ "margin-left": "0" });
-}
-
-
- // search ================================================================
-  $("#filter").on("keyup", function() {
+  // search ================================================================
+  $("#filter").on("keyup", function () {
     var value = $(this).val().toLowerCase();
-    $(".formList li").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    $(".formList li").filter(function () {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
     });
   });
 
-  $("d").click(function(){
+  $("d").click(function () {
     $("p:first").addClass("intro");
   });
- // search ================================================================
+  // search ================================================================
 
   // highlight ================================================================
 
-  $('.sidenav a').click(function(){
-
-  $($(this).attr('href')).addClass("highlight").delay(1000).queue(function(){
-    $(this).removeClass("highlight").dequeue();
+  $(".sidenav a").click(function () {
+    $($(this).attr("href"))
+      .addClass("highlight")
+      .delay(1000)
+      .queue(function () {
+        $(this).removeClass("highlight").dequeue();
+      });
   });
-        
- });
 
   // highlight ================================================================
 
-  $(document).on('click', '.nav-item a', function (e) {
-    $(this).parent().addClass('active').siblings().removeClass('active');
-});
+  $(document).on("click", ".nav-item a", function (e) {
+    $(this).parent().addClass("active").siblings().removeClass("active");
+  });
 
- $(".Devices").change(function(){
+  $(".Devices").change(function () {
+    if ($(".Devices").val() == "Other") {
+      $("#OtherInput").show();
+      $("#other").prop("required", true);
+    } else {
+      $("#OtherInput").hide();
+      $("#other").prop("required", false);
+    }
+  });
 
-  if ($(".Devices").val() == "Other") {
-    $("#OtherInput").show();
-    $("#other").prop('required',true);
-  }else{
-    $("#OtherInput").hide();
-    $("#other").prop('required',false);
-  }
- });
+  // ========================= FAQ arrow ====================
 
-// ========================= FAQ arrow ====================
+  $(".card-header a").click(function () {
+    var obj = $(this);
 
-$(".card-header a").click(function() {
-
-  var obj = $(this);
-  
-  setTimeout(
-    function()
-    {
-      var myClass = obj.attr("class")
+    setTimeout(function () {
+      var myClass = obj.attr("class");
       if (myClass.match("collapsed")) {
-        
+        obj.find(".fas").addClass("arrow-right");
         obj.find(".fas").removeClass("arrow-down");
-        
-        
-      } else{
-         $(".fas").addClass("arrow-right");
-          $(".fas").removeClass("arrow-down");
-         
+      } else {
+        $(".arrow-down").addClass("arrow-right");
+        $(".fas").removeClass("arrow-down");
 
         obj.find(".fas").removeClass("arrow-right");
         obj.find(".fas").addClass("arrow-down");
       }
     }, 0.01);
+  });
 
-    
-
-});
-
-
-
-// ========================= FAQ arrow ====================
+  // ========================= FAQ arrow ====================
 });
 
 $(window).scroll(function () {
