@@ -5,7 +5,7 @@ $(document).ready(function () {
     $("hr").css({ "margin-left": "0" });
   }
 
-  // search ================================================================
+  //============================== search ==================================
   $("#filter").on("keyup", function () {
     var value = $(this).val().toLowerCase();
     $(".formList li").filter(function () {
@@ -16,9 +16,9 @@ $(document).ready(function () {
   $("d").click(function () {
     $("p:first").addClass("intro");
   });
-  // search ================================================================
+  //============================= search ===================================
 
-  // highlight ================================================================
+  //=============================== highlight =================================
 
   $(".sidenav a").click(function () {
     $($(this).attr("href"))
@@ -29,7 +29,9 @@ $(document).ready(function () {
       });
   });
 
-  // highlight ================================================================
+  //================================== highlight ==============================
+
+  // ========================= Change Active Tab On Navbar ====================
 
   $(document).on("click", ".nav-item a", function (e) {
     $(this).parent().addClass("active").siblings().removeClass("active");
@@ -44,6 +46,8 @@ $(document).ready(function () {
       $("#other").prop("required", false);
     }
   });
+
+  // ========================= Change Active Tab On Navbar ====================
 
   // ========================= FAQ arrow ====================
 
@@ -80,4 +84,13 @@ $(window).scroll(function () {
   if (scroll >= 600) {
     $(".service").addClass("fadeinleft");
   }
+
+  // $(window).resize(function() {
+  //   if ($(window).width() < 960) {
+  //      alert('Less than 960');
+  //   }
+  //  else {
+  //     alert('More than 960');
+  //  }
+  // });
 });
