@@ -103,7 +103,7 @@
     <script src="../jspdf.umd.min.js"></script>
     <script src="../jspdf.debug.js"></script>
 
-    <title>e-Learning</title>
+    <title>Assets Assign Request Form</title>
   </head>
 
   <body>
@@ -144,7 +144,7 @@
               <a class="nav-link" href="../../">Home</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="../forms/">e-Learning Forms</a>
+              <a class="nav-link" href="../">e-Learning Forms</a>
             </li>
 
             <li class="nav-item">
@@ -338,7 +338,7 @@
 
         <div class="inputs">
           <p>
-            <input type="submit" id="subButton" />
+            <input type="submit" id="subButton" value="Download PDF" />
           </p>
         </div>
       </form>
@@ -449,7 +449,7 @@
         doc.addPage();
         doc.addImage(thirdImage, "JPEG", -1, -1, 211, 299);
 
-        window.open(doc.output("bloburl"), "_blank");
+        doc.save("Assets Assign Request Form.pdf");
       });
     </script>
   </body>
