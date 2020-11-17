@@ -42,8 +42,10 @@ $(document).ready(function () {
 
   // ========================= Forms Select Tag Other field ====================
 
-  $(".Devices").change(function () {
-    if ($(".Devices").val() == "Other") {
+  $("select").change(function () {
+    className = $(this).attr("class");
+
+    if ($("." + className).val() == "Other") {
       $("#OtherInput").show();
       $("#other").prop("required", true);
     } else {
