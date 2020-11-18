@@ -77,8 +77,63 @@ $(document).ready(function () {
   });
 
   // ========================= FAQ arrow ====================
-});
+  // $(window).resize(function() {
+  //   if ($(window).width() < 960) {
+  //      alert('Less than 960');
+  //   }
+  //  else {
+  //     alert('More than 960');
+  //  }
+  // });
 
+  // ========================= Adding More Fields ====================
+  var counter = 3;
+
+  $("#addButton").click(function () {
+    if (counter > 7) {
+      return false;
+    }
+
+    if (counter >= 3) {
+      $("#removeButton").css("visibility", "visible");
+    }
+    var newTextBoxDiv = $(document.createElement("div")).attr(
+      "id",
+      "TextBoxDiv" + counter
+    );
+
+    newTextBoxDiv
+      .after()
+      .html(
+        "<p style='margin-bottom: 0.2rem'><label> " +
+          "</label>" +
+          '<input type="text" style="margin-left: 3px;" id="course' +
+          counter +
+          '" value="" placeholder="Course Code" required></p>'
+      );
+
+    newTextBoxDiv.appendTo(".more");
+
+    counter++;
+    if (counter > 7) {
+      $("#addButton").prop("disabled", true);
+    }
+  });
+
+  $("#removeButton").click(function () {
+    counter--;
+
+    if (counter <= 3) {
+      $("#TextBoxDiv" + counter).remove();
+      $("#removeButton").css("visibility", "hidden");
+      return false;
+    }
+
+    $("#TextBoxDiv" + counter).remove();
+    $("#addButton").prop("disabled", false);
+  });
+});
+// ========================= Adding More Fields ====================
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
 
@@ -91,13 +146,4 @@ $(window).scroll(function () {
   if (scroll >= 600) {
     $(".service").addClass("fadeinleft");
   }
-
-  // $(window).resize(function() {
-  //   if ($(window).width() < 960) {
-  //      alert('Less than 960');
-  //   }
-  //  else {
-  //     alert('More than 960');
-  //  }
-  // });
 });
