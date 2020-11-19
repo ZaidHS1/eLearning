@@ -107,9 +107,9 @@ $(document).ready(function () {
       .html(
         "<p style='margin-bottom: 0.2rem'><label> " +
           "</label>" +
-          '<input type="text" style="margin-left: 3px;" id="course' +
+          '<input type="text" style="margin-left: -5px;" id="course' +
           counter +
-          '" value="" placeholder="Course Code" required></p>'
+          '" value="" placeholder="كود المقرر" required></p>'
       );
 
     newTextBoxDiv.appendTo(".more");
