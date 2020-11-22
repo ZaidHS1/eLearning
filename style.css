@@ -199,6 +199,10 @@ input {
   margin-left: 150px;
 }
 
+.conMail .mail {
+  color: #51adec;
+}
+
 .ContactWhats {
   margin-left: 108px;
   margin-top: 50px;
@@ -544,7 +548,7 @@ input {
 }
 
 .whats {
-  color: lightskyblue;
+  color: #51adec;
   margin-left: 111px;
 }
 .whats:hover {
