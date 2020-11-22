@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -11,9 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../media.css" />
-    <link rel="stylesheet" href="../keyframes.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/media.css" />
+    <link rel="stylesheet" href="/keyframes.css" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -23,39 +23,38 @@
     />
 
     <!-- ------- -->
-
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="../favicon/apple-touch-icon.png"
+      href="/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../favicon/favicon-32x32.png"
+      href="/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="../favicon/favicon-16x16.png"
+      href="/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
     <link
       rel="mask-icon"
-      href="../favicon/safari-pinned-tab.svg"
+      href="/favicon/safari-pinned-tab.svg"
       color="#5bbad5"
     />
-    <link rel="shortcut icon" href="../favicon/favicon.ico" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="msapplication-config" content="favicon/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
 
-    <script
-      src="https://kit.fontawesome.com/9c49d18a34.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+    />
     <!-- Start of Async Callbell Code -->
     <script>
       window.callbellSettings = {
@@ -100,19 +99,19 @@
     </script>
     <!-- End of Async Callbell Code -->
 
-    <title>FAQ</title>
+    <title>الأسئلةالشائعة</title>
   </head>
 
-  <body>
+  <body dir="rtl">
     <div class="topbar">
-      <div class="form-group">
+      <div class="form-group form-ar">
         <select class="form-control" onchange="location = this.value;">
-          <option value="/ar/faq/">العربية</option>
-          <option value="" selected>English</option>
+          <option value="" selected>العربية</option>
+          <option value="/faq/">English</option>
         </select>
       </div>
-      <a href="../"><img class="logo" src="../images/Logo.png" alt="logo" /></a>
-      <img class="royalLogo" src="../images/RoyalLogo.png" alt="Royal Logo" />
+      <a href="/ar/"><img class="logo" src="/images/Logo.png" alt="logo" /></a>
+      <img class="royalLogo" src="/images/RoyalLogo.png" alt="Royal Logo" />
 
       <nav class="navbar navbar-expand-lg navbar-dark">
         <button
@@ -127,12 +126,14 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav nav-ar">
             <li class="nav-item">
-              <a class="nav-link" href="../">Home</a>
+              <a class="nav-link" href="/ar/"
+                >الرئيسية <span class="sr-only">(current)</span></a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../forms/">e-Learning Forms</a>
+              <a class="nav-link" href="/ar/forms/">نماذج التعليم الإلكتروني</a>
             </li>
 
             <li class="nav-item">
@@ -144,10 +145,10 @@
               >
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="../faq/">FAQ</a>
+              <a class="nav-link" href="">الأسئلة الشائعة</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../contactus/">Contact Us</a>
+              <a class="nav-link" href="/ar/contactus/">تواصل معنا</a>
             </li>
 
             <li class="nav-item dropdown nav-lang">
@@ -160,18 +161,19 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                English
+                العربية
               </a>
               <div
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a class="dropdown-item" href="/ar/faq/">العربية</a>
-                <a class="dropdown-item" href="">English</a>
+                <a class="dropdown-item" href="">العربية</a>
+                <a class="dropdown-item" href="/faq/">English</a>
               </div>
             </li>
           </ul>
-          <form class="form-inline ml-auto">
+
+          <form class="form-inline mr-auto">
             <input
               class="form-control mr-sm-2"
               type="search"
@@ -179,7 +181,7 @@
               aria-label="Search"
             />
             <button class="btn searchBtn my-2 my-sm-0" type="submit">
-              Search
+              بحث
             </button>
           </form>
         </div>
@@ -188,21 +190,24 @@
 
     <!-- ============================== Top Section ============================== -->
 
-    <div class="wrapper faqwrapper">
-      <h1 style="text-align: center">Frequently Asked Questions</h1>
+    <div class="wrapper faqwrapper" style="text-align: right">
+      <h1 style="text-align: center">الأسئلةالشائعة</h1>
       <div class="accordion" id="accordion">
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q1">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> Is
-              Blackboard browser specific? If it is then which browser should I
-              use?
-            </a>
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />هل ال Blackboard يحتاج متصفح خاص ؟ وإذا كان كذلك فما هو
+              المتصفح؟</a
+            >
           </div>
 
           <div id="Q1" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              Recomended browsers are Chrome or Firefox.
+              المتصفحات الموصى بها هي Chrome أو Firefox.
             </div>
           </div>
         </div>
@@ -210,14 +215,18 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q2">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              do I log in to Blackboard for the first time?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف أسجل الدخول إلى Blackboard لأول مرة؟
             </a>
           </div>
 
           <div id="Q2" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              You can log into blackboard by using your employee ID.
+              يمكنك تسجيل الدخول إلى البلاك بورد باستخدام الرقم الوظيفي الخاص بك
             </div>
           </div>
         </div>
@@ -225,14 +234,18 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q3">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> I
-              forgot my password. What should I do?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              لقد نسيت كلمة المرور. ماذا يجب أن أفعل؟
             </a>
           </div>
 
           <div id="Q3" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              Use the forget password option or send email to:
+              استخدم خيار نسيت كلمة المرور أو أرسل بريدًا إلكترونيًا إلى:
               <br />
               elearning@jic.edu.sa
               <br />
@@ -246,14 +259,18 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q4">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              can I get Blackboard courses for my classes?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف يمكنني الحصول على مقررات Blackboard لفصولي؟
             </a>
           </div>
 
           <div id="Q4" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              You will have all your courses when the semester starts.
+              سيكون لديك جميع المقررات الخاصة بك عند بدء الفصل الدراسي.
             </div>
           </div>
         </div>
@@ -261,33 +278,41 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q5">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              can I create a course?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف يمكنني إنشاء مادة؟
             </a>
           </div>
 
           <div id="Q5" class="collapse" data-parent="#accordion">
-            <div class="card-body">You do not have to create a course.</div>
+            <div class="card-body">لا تحتاج إلى إنشاء مادة</div>
           </div>
         </div>
 
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q6">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              should I add different course material to my course?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف يجب أن أضيف مواد مختلفة للمقرر الدراسي الخاص بي؟
             </a>
           </div>
 
           <div id="Q6" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              Check the different video
+              تحقق من
               <a
                 href="https://www.youtube.com/playlist?list=PLkam6_5V1hYOTLuJPqjnADtxsIToCc1Ul"
                 target="_blank"
-                >tutorials</a
+                >دروس</a
               >
-              on adding course materials
+              الفيديو المختلفة حول إضافة مواد للمقرر
             </div>
           </div>
         </div>
@@ -295,19 +320,24 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q7">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> Can
-              I add images to my course details?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              هل يمكنني إضافة صور إلى تفاصيل المقرر الدراسي؟
             </a>
           </div>
 
           <div id="Q7" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              Yes. Check the video
+              نعم. تحقق من
               <a
                 href="https://www.youtube.com/playlist?list=PLkam6_5V1hYOTLuJPqjnADtxsIToCc1Ul"
                 target="_blank"
-                >tutorials</a
-              >.
+              >
+                دروس </a
+              >الفيديو.
             </div>
           </div>
         </div>
@@ -315,19 +345,24 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q8">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> Can
-              I create hyperlinked pages for course details?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              هل يمكنني إنشاء روابط للمقرر الدراسي؟
             </a>
           </div>
 
           <div id="Q8" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              Yes. Check the video
+              نعم. تحقق من
               <a
                 href="https://www.youtube.com/playlist?list=PLkam6_5V1hYOTLuJPqjnADtxsIToCc1Ul"
                 target="_blank"
-                >tutorials</a
-              >.
+              >
+                دروس </a
+              >الفيديو.
             </div>
           </div>
         </div>
@@ -335,19 +370,24 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q9">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              can I add a quiz?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف يمكنني إضافة اختبار؟
             </a>
           </div>
 
           <div id="Q9" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              Check the video
+              تحقق من
               <a
                 href="https://www.youtube.com/playlist?list=PLkam6_5V1hYOTLuJPqjnADtxsIToCc1Ul"
                 target="_blank"
-                >tutorials</a
-              >.
+              >
+                دروس </a
+              >الفيديو.
             </div>
           </div>
         </div>
@@ -355,19 +395,24 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q10">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> Can
-              I add images or videos to my quiz or course?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              هل يمكنني إضافة صور أو مقاطع فيديو إلى اختباري أو مقرري الدراسي؟
             </a>
           </div>
 
           <div id="Q10" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              Yes. Check the video
+              نعم. تحقق من
               <a
                 href="https://www.youtube.com/playlist?list=PLkam6_5V1hYOTLuJPqjnADtxsIToCc1Ul"
                 target="_blank"
-                >tutorials</a
-              >.
+              >
+                دروس </a
+              >الفيديو.
             </div>
           </div>
         </div>
@@ -375,15 +420,19 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q11">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              can I add the date limit and time limit for my quiz?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف يمكنني إضافة حد للتاريخ والوقت المحدد للاختبار الخاص بي؟
             </a>
           </div>
 
           <div id="Q11" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              When you create a test, in the test options you will find Due
-              Date. Under due date you can change the date and time limits.
+              عندما تقوم بإنشاء اختبار، في خيارات الاختبار ستجد تاريخ التسليم.
+              تحت تاريخ التسليم يمكنك تغيير التاريخ والوقت.
             </div>
           </div>
         </div>
@@ -391,19 +440,24 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q12">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              can I add questions to my quiz?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف يمكنني إضافة أسئلة إلى الاختبار الخاص بي؟
             </a>
           </div>
 
           <div id="Q12" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              Check the video
+              تحقق من
               <a
                 href="https://www.youtube.com/playlist?list=PLkam6_5V1hYOTLuJPqjnADtxsIToCc1Ul"
                 target="_blank"
-                >tutorials</a
-              >.
+              >
+                دروس </a
+              >الفيديو.
             </div>
           </div>
         </div>
@@ -411,19 +465,24 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q13">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              should I select questions randomly for my quiz?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف يمكنني تحديد الأسئلة بشكل عشوائي للاختبار الخاص بي؟
             </a>
           </div>
 
           <div id="Q13" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              Check the video
+              تحقق من
               <a
                 href="https://www.youtube.com/playlist?list=PLkam6_5V1hYOTLuJPqjnADtxsIToCc1Ul"
                 target="_blank"
-                >tutorials</a
-              >.
+              >
+                دروس </a
+              >الفيديو.
             </div>
           </div>
         </div>
@@ -431,15 +490,18 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q14">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              can I create a key/password for my course?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف يمكنني إنشاء مفتاح/كلمة مرور للمقرر الدراسي الخاص بي؟
             </a>
           </div>
 
           <div id="Q14" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              You do not need one, as your students will already be there in the
-              course.
+              أنت لا تحتاج إلى واحد، كما سيكون طلابك بالفعل هناك في المقرر.
             </div>
           </div>
         </div>
@@ -447,19 +509,24 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q15">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              can I create a key/password for my quiz?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف يمكنني إنشاء مفتاح / كلمة مرور للاختبار الخاص بي؟
             </a>
           </div>
 
           <div id="Q15" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              Check the video
+              تحقق من
               <a
                 href="https://www.youtube.com/playlist?list=PLkam6_5V1hYOTLuJPqjnADtxsIToCc1Ul"
                 target="_blank"
-                >tutorials</a
-              >.
+              >
+                دروس </a
+              >الفيديو.
             </div>
           </div>
         </div>
@@ -467,28 +534,38 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q16">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> Can
-              I restrict students to attempting a quiz only once?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              هل يمكنني تقييد الطلاب في محاولة اختبار مرة واحدة فقط؟
             </a>
           </div>
 
           <div id="Q16" class="collapse" data-parent="#accordion">
-            <div class="card-body">Yes, you can by editing test options.</div>
+            <div class="card-body">
+              نعم، يمكنك ذلك عن طريق تحرير خيارات الاختبار.
+            </div>
           </div>
         </div>
 
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q17">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> Can
-              I create a practice material/quiz that can be accessed any number
-              of times?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              هل يمكنني إنشاء مادة/اختبار عملي يمكن الوصول إليها في أي عدد من
+              المرات؟
             </a>
           </div>
 
           <div id="Q17" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              Yes, you can select unlimited option for the attempts.
+              نعم، يمكنك تحديد خيار غير محدود للمحاولات
             </div>
           </div>
         </div>
@@ -496,20 +573,24 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q18">
-              <img src="../images/right-arrow.png" class="fas arrowImage" />
-              What are the several types quiz questions that can be created?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              ما هي أنواع أسئلة الاختبار المتعددة التي يمكن إنشاؤها؟
             </a>
           </div>
 
           <div id="Q18" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              There are 17 different types of quetions that you can select from.
-              Check the video
+              هناك 17 نوعًا مختلفًا من الأسئلة يمكنك الاختيار من بينها. تحقق من
               <a
                 href="https://www.youtube.com/playlist?list=PLkam6_5V1hYOTLuJPqjnADtxsIToCc1Ul"
                 target="_blank"
-                >tutorials</a
-              >.
+              >
+                دروس </a
+              >الفيديو.
             </div>
           </div>
         </div>
@@ -517,15 +598,19 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q19">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> Can
-              I reuse a course from a previous academic year/semester?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              هل يمكنني إعادة استخدام دورة من عام / فصل دراسي سابق؟
             </a>
           </div>
 
           <div id="Q19" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              Yes, you have to take a backup of your previous course and restore
-              it in the current course.
+              نعم ، يجب عليك عمل نسخة احتياطية من الدورة التدريبية السابقة
+              واستعادتها في الدورة التدريبية الحالية.
             </div>
           </div>
         </div>
@@ -533,15 +618,19 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q20">
-              <img src="../images/right-arrow.png" class="fas arrowImage" />
-              After adding all the material for my course, can I hide some of it
-              from the students.
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              بعد إضافة جميع المواد الخاصة بالدورة التدريبية ، هل يمكنني إخفاء
+              بعضها عن الطلاب.
             </a>
           </div>
 
           <div id="Q20" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              Yes, you can make the course items unavailable.
+              نعم ، يمكنك جعل عناصر الدورة التدريبية غير متاحة.
             </div>
           </div>
         </div>
@@ -549,29 +638,35 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q21">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              do I create sections for my course?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف يمكنني إنشاء شعب للمقرر الدراسي الخاص بي؟
             </a>
           </div>
 
           <div id="Q21" class="collapse" data-parent="#accordion">
-            <div class="card-body">
-              You will have a course for every sections in blackboard
-            </div>
+            <div class="card-body">سيكون لديك مقرر لكل شعبة في Blackboard</div>
           </div>
         </div>
 
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q22">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> Can
-              students enroll to specific sections for specific course?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              هل يمكن للطلاب التسجيل في شعب محددة لمقرر محددة؟
             </a>
           </div>
 
           <div id="Q22" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              No, they will already be in the courses automatically
+              لا، سوف يكونون بالفعل في المقررات الدراسية الخاصة بهم تلقائيا
             </div>
           </div>
         </div>
@@ -579,20 +674,24 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q23">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              can I view the results for specific sections?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف يمكنني عرض النتائج لشعب محددة؟
             </a>
           </div>
 
           <div id="Q23" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              You can view the results from the full grade center. Check the
-              video
+              يمكنك عرض النتائج من full grade center. تحقق من
               <a
                 href="https://www.youtube.com/playlist?list=PLkam6_5V1hYOTLuJPqjnADtxsIToCc1Ul"
                 target="_blank"
-                >tutorials</a
-              >.
+              >
+                دروس </a
+              >الفيديو.
             </div>
           </div>
         </div>
@@ -600,31 +699,36 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q24">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> Can
-              I create an attendance for my course?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              هل يمكنني إنشاء تحضير للمقرر الخاص بي؟
             </a>
           </div>
 
           <div id="Q24" class="collapse" data-parent="#accordion">
-            <div class="card-body">
-              No, there is no option for attendance in Blackboard
-            </div>
+            <div class="card-body">لا، لا يوجد خيار للتحضير في Blackboard</div>
           </div>
         </div>
 
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q25">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              do I enroll students in my Blackboard course without enrolling
-              them manually?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف يمكنني تسجيل الطلاب في المقرر الدراسي في الـ Blackboard دون
+              تسجيلهم يدويًا؟
             </a>
           </div>
 
           <div id="Q25" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              They will be in the course automatically, you do not have to
-              enroll them.
+              سيكونون في المقرر تلقائيًا ، ولا يتعين عليك تسجيلهم.
             </div>
           </div>
         </div>
@@ -632,15 +736,20 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q26">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              do I manually enroll students in my Blackboard course?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف يمكنني تسجيل الطلاب يدويًا في مقرر Blackboard الدراسي الخاص
+              بي؟
             </a>
           </div>
 
           <div id="Q26" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              You can enroll students from the users and group option under the
-              Control panel.
+              يمكنك تسجيل الطلاب عن طريق خيار Users and group في الـ Control
+              Panel.
             </div>
           </div>
         </div>
@@ -648,15 +757,19 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q27">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              can I add maximum marks for my course?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف يمكنني إضافة الحد الأقصى للدرجات في المقرر؟
             </a>
           </div>
 
           <div id="Q27" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              You can have marks for individual assessments that will add up to
-              make a total for the course.
+              يمكنك الحصول على درجات للأعمال الفردية والتي ستجمع لتكوين اجمالي
+              مجموع الدرجات للمقرر.
             </div>
           </div>
         </div>
@@ -664,15 +777,20 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q28">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              can I grade my students?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف يمكنني رصد الدرجات لطلابي؟
             </a>
           </div>
 
           <div id="Q28" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              Students are graded automatically for auto graded question types
-              and you have to manually grade descriptive question types.
+              يتم رصد درجات الطلاب تلقائيًا لأنواع الأسئلة التي تم وضع رصد
+              الدجات فيها تلقائي، ويجب عليك رصد الدرجات لأنواع الأسئلة الوصفية
+              يدويًا.
             </div>
           </div>
         </div>
@@ -680,20 +798,25 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q29">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              can I backup my course?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف يمكنني الاحتفاظ بنسخة احتياطية من مقرري الدراسي؟
             </a>
           </div>
 
           <div id="Q29" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              You can backup the course from packages and utilities under
-              control panel. Check the video
+              يمكنك نسخ الدورة احتياطيًا من packages and utilities اسفل control
+              panel. تحقق من
               <a
                 href="https://www.youtube.com/playlist?list=PLkam6_5V1hYOTLuJPqjnADtxsIToCc1Ul"
                 target="_blank"
-                >tutorials</a
-              >.
+              >
+                دروس </a
+              >الفيديو.
             </div>
           </div>
         </div>
@@ -701,19 +824,24 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q30">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              can I backup the results?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف يمكنني نسخ النتائج احتياطيًا؟
             </a>
           </div>
 
           <div id="Q30" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              Check the video
+              تحقق من
               <a
                 href="https://www.youtube.com/playlist?list=PLkam6_5V1hYOTLuJPqjnADtxsIToCc1Ul"
                 target="_blank"
-                >tutorials</a
-              >.
+              >
+                دروس </a
+              >الفيديو.
             </div>
           </div>
         </div>
@@ -721,17 +849,20 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q31">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              can I create calendar event for my course quizzes/assignments and
-              exams?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف يمكنني إنشاء حدث تقويم لاختبارات/الواجبات والامتحانات الخاصة
+              بالمقرر الدراسي؟
             </a>
           </div>
 
           <div id="Q31" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              When you create items with due dates, such as tests or
-              assignments, the calendar event automatically appears on the
-              course calendar for that day.
+              عند إنشاء عناصر بتواريخ تسليم ، مثل الاختبارات أو الواجبات ، يظهر
+              حدث التقويم تلقائيًا في تقويم المقرر الدراسي لذلك اليوم.
             </div>
           </div>
         </div>
@@ -739,34 +870,39 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q32">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              can I import a course?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف يمكنني استعادة دورة؟
             </a>
           </div>
 
           <div id="Q32" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              You can restore the course from packages and utilities under
-              control panel. Check the video
+              يمكنك استعادة الدورة التدريبية من packages and utilities اسفل
+              control panel. تحقق من
               <a
                 href="https://www.youtube.com/playlist?list=PLkam6_5V1hYOTLuJPqjnADtxsIToCc1Ul"
                 target="_blank"
-                >tutorials</a
               >
+                دروس </a
+              >الفيديو.
               <br />
-              You will use the same file to import that you exported.
+              ستستخدم نفس الملف للاستيراد الذي قمت بتصديره.
               <br />
-              Click Packages and utilities under “Course Management”.
+              انقر على Packages and utilities اسفل “Course Management”.
               <br />
-              Click Import Package / View Logs.
+              انقر على Import Package / View Logs.
               <br />
-              Click Import Package.
+              انقر على Import Package.
               <br />
-              Click “Browse My computer” and select the file that you exported.
+              انقر على “Browse My computer” وحدد الملف الذي قمت بتصديره.
               <br />
-              Select the options under “course material”.
+              حدد الخيارات الموجودة أسفل “course material”.
               <br />
-              Click submit.
+              انقر على submit.
             </div>
           </div>
         </div>
@@ -774,29 +910,34 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q33">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              can I export a course?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف يمكنني تصدير دورة؟
             </a>
           </div>
 
           <div id="Q33" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              You will use the same file to import that you exported.
+              ستستخدم نفس الملف للاستيراد الذي قمت بتصديره.
               <br />
-              Click Packages and utilities under “Course Management”.
+              انقر على Packages and utilities اسفل “Course Management”.
               <br />
-              Click Export/Archive Course.
+              انقر على Export/Archive Course.
               <br />
-              Click Export Package.
+              انقر ععلى Export Package.
               <br />
-              Click “Submit” after selecting different options.
+              انقر على “Submit” بعد تحديد الخيارات المختلفة.
               <br />
-              Check the video
+              تحقق من
               <a
                 href="https://www.youtube.com/playlist?list=PLkam6_5V1hYOTLuJPqjnADtxsIToCc1Ul"
                 target="_blank"
-                >tutorials</a
               >
+                دروس </a
+              >الفيديو.
             </div>
           </div>
         </div>
@@ -804,24 +945,29 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q35">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              can I email or message my students in a course?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف يمكنني إرسال بريد إلكتروني إلى طلابي أو مراسلة طلابي في المقرر
+              الدراسي؟
             </a>
           </div>
 
           <div id="Q35" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              Go to Course Management.
+              اذهب إلى Course Management.
               <br />
-              Click Course Tools.
+              انقر على Course Tools.
               <br />
-              Select Send Email.
+              اختر Send Email.
               <br />
-              Click All Student Users.
+              انقر على All Student Users.
               <br />
-              Type in the Subject and Message.
+              اكتب الموضوع والرسالة.
               <br />
-              Click submit.
+              انقر على submit.
             </div>
           </div>
         </div>
@@ -829,20 +975,25 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q36">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> Can
-              I manually grade my students in some of the questions that need
-              detail answers?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              هل يمكنني رصد درجات طلابي يدوياً في بعض الأسئلة التي تحتاج إلى
+              إجابات تفصيلية؟
             </a>
           </div>
 
           <div id="Q36" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              Yes. Check the video
+              نعم. تحقق من
               <a
                 href="https://www.youtube.com/playlist?list=PLkam6_5V1hYOTLuJPqjnADtxsIToCc1Ul"
                 target="_blank"
-                >tutorials</a
-              >.
+              >
+                دروس </a
+              >الفيديو.
             </div>
           </div>
         </div>
@@ -850,20 +1001,24 @@
         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#Q37">
-              <img src="../images/right-arrow.png" class="fas arrowImage" /> How
-              can I upload files for a course or an Assignment?
+              <img
+                style="margin-left: 10px; margin-right: 0"
+                src="/images/left-arrow.png"
+                class="arArrow arrowImage"
+              />
+              كيف يمكنني رفع ملفات مقرر دراسي أو واجب؟
             </a>
           </div>
 
           <div id="Q37" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              You can upload different files for a course and assignments, check
-              the video
+              يمكنك رفع ملفات مختلفة للمقرر الدراسي والواجبات, تحقق من
               <a
                 href="https://www.youtube.com/playlist?list=PLkam6_5V1hYOTLuJPqjnADtxsIToCc1Ul"
                 target="_blank"
-                >tutorials</a
-              >.
+              >
+                دروس </a
+              >الفيديو.
             </div>
           </div>
         </div>

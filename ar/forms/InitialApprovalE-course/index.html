@@ -11,9 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../../style.css" />
-    <link rel="stylesheet" href="../../media.css" />
-    <link rel="stylesheet" href="../../keyframes.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/media.css" />
+    <link rel="stylesheet" href="/keyframes.css" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -27,27 +27,27 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="../../favicon/apple-touch-icon.png"
+      href="/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../../favicon/favicon-32x32.png"
+      href="/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="../../favicon/favicon-16x16.png"
+      href="/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="../../favicon/site.webmanifest" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
     <link
       rel="mask-icon"
-      href="../../favicon/safari-pinned-tab.svg"
+      href="/favicon/safari-pinned-tab.svg"
       color="#5bbad5"
     />
-    <link rel="shortcut icon" href="../../favicon/favicon.ico" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="msapplication-config" content="favicon/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
@@ -103,28 +103,19 @@
     <script src="../jspdf.umd.min.js"></script>
     <script src="../jspdf.debug.js"></script>
 
-    <title>Initial Approval for E-Course Development Request Form</title>
+    <title>نموذج الموافقة المبدئیة على تطویر مقرر إلكتروني</title>
   </head>
 
-  <body>
+  <body dir="rtl" class="bar">
     <div class="topbar">
-      <div class="form-group">
+      <div class="form-group form-ar">
         <select class="form-control" onchange="location = this.value;">
-          <option value="" disabled selected style="text-align: right">
-            اللغة
-          </option>
-          <option value="ar/RequestCourseForm/">العربية</option>
-          <option value="">English</option>
+          <option value="" selected>العربية</option>
+          <option value="/forms/InitialApprovalE-course/">English</option>
         </select>
       </div>
-      <a href="../../"
-        ><img class="logo" src="../../images/Logo.png" alt="logo"
-      /></a>
-      <img
-        class="royalLogo"
-        src="../../images/RoyalLogo.png"
-        alt="Royal Logo"
-      />
+      <a href="/"><img class="logo" src="/images/Logo.png" alt="logo" /></a>
+      <img class="royalLogo" src="/images/RoyalLogo.png" alt="Royal Logo" />
 
       <nav class="navbar navbar-expand-lg navbar-dark">
         <button
@@ -139,12 +130,14 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav nav-ar">
             <li class="nav-item">
-              <a class="nav-link" href="../../">Home</a>
+              <a class="nav-link" href="/"
+                >الرئيسية <span class="sr-only">(current)</span></a
+              >
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="../">e-Learning Forms</a>
+              <a class="nav-link" href="../">نماذج التعليم الإلكتروني</a>
             </li>
 
             <li class="nav-item">
@@ -156,10 +149,10 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../../faq/">FAQ</a>
+              <a class="nav-link" href="/ar/faq/">الأسئلة الشائعة</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../../contactus/">Contact Us</a>
+              <a class="nav-link" href="/ar/contactus/">تواصل معنا</a>
             </li>
 
             <li class="nav-item dropdown nav-lang">
@@ -172,20 +165,21 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Language
+                العربية
               </a>
               <div
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a class="dropdown-item" href="ar/RequestCourseForm/"
-                  >العربية</a
+                <a class="dropdown-item" href="">العربية</a>
+                <a class="dropdown-item" href="/forms/InitialApprovalE-course/"
+                  >English</a
                 >
-                <a class="dropdown-item" href="#">English</a>
               </div>
             </li>
           </ul>
-          <form class="form-inline ml-auto">
+
+          <form class="form-inline mr-auto">
             <input
               class="form-control mr-sm-2"
               type="search"
@@ -193,7 +187,7 @@
               aria-label="Search"
             />
             <button class="btn searchBtn my-2 my-sm-0" type="submit">
-              Search
+              بحث
             </button>
           </form>
         </div>
@@ -203,71 +197,70 @@
     <!-- ============================== Top Section ============================== -->
 
     <div class="wrapper">
-      <h1 style="text-align: center; margin-top: 50px">
-        Initial Approval for E-Course Development Request Form
+      <h1 style="text-align: center; margin-top: 50px; margin-bottom: 85px">
+        نموذج الموافقة المبدئیة على تطویر مقرر إلكتروني
       </h1>
-      <form id="Form" class="fillingForm">
-        <h2>Faculty Section</h2>
+      <form id="Form" class="fillingForm fF-ar" action="">
+        <h2>عضو ھیئة التدریس</h2>
         <div class="inputs">
-          <p style="text-align: left; font-size: 17.5px">
-            As I am the faculty member whose information is mentioned below, I
-            request the required approval to design and develop an e-version of
-            the course teaching for
-            <input type="text" id="courseTo" value="" required />.
+          <p dir="rtl" style="text-align: right; font-size: 17.5px">
+            أنا عضو ھیئة التدریس الموضحة معلوماتي أدناه أطلب الموافقة اللازمة
+            لتصمیم وتطویر النسخة الإلكترونیة من المقرر الذي یُدرس في
+            <input type="text" id="courseTo" value="" required /> .
           </p>
           <br />
         </div>
 
-        <h2>Course Information</h2>
+        <h2>معلومات المقرر</h2>
         <div class="inputs">
           <p>
-            <label for="Course Title">Course Title: </label>
+            <label for="Course Title">عنوان المقرر: </label>
             <input
               type="text"
               id="title"
               value=""
-              placeholder="Course Title"
+              placeholder="عنوان المقرر"
               required
             />
           </p>
 
           <p>
-            <label for="Course Code">Course Code: </label>
+            <label for="Course Code">كود المقرر: </label>
             <input
               type="text"
               id="code"
               value=""
-              placeholder="Course Code"
+              placeholder="كود المقرر"
               required
             />
           </p>
 
           <p>
-            <label for="name">Faculty Name:</label>
+            <label for="name">اسم العضو:</label>
             <input
               type="text"
               id="name"
               value=""
-              placeholder="Faculty Name"
+              placeholder="اسم العضو"
               required
             />
           </p>
           <p>
-            <label for="id">Faculty ID:</label>
+            <label for="id">الرقم الوظیفي:</label>
             <input
               type="text"
               id="facultyID"
               value=""
-              placeholder="Faculty ID"
+              placeholder="الرقم الوظیفي"
               required
             />
           </p>
         </div>
 
-        <h2>Institute Information</h2>
+        <h2>معلومات المؤسسة</h2>
         <div class="inputs">
           <p>
-            <label for="Institute">Institute: </label>
+            <label for="Institute">المؤسسة: </label>
             <select class="Institute" required>
               <option value="" disabled selected>-----</option>
               <option value="JUC">JUC</option>
@@ -278,49 +271,49 @@
           </p>
 
           <p>
-            <label for="Department">Department: </label>
+            <label for="Department">القسم: </label>
             <input
               type="text"
               id="Department"
               value=""
-              placeholder="Department"
+              placeholder="القسم"
               required
             />
           </p>
 
           <p>
-            <label for="Applicant Semester">Applicant Semester:</label>
+            <label for="Applicant Semester">فصل الطلب:</label>
             <input
               type="text"
               id="Semester"
               value=""
-              placeholder="Applicant Semester"
+              placeholder="فصل الطلب"
               required
             />
           </p>
           <p>
-            <label for="Effective Semester">Effective Semester:</label>
+            <label for="Effective Semester">فصل التفعيل:</label>
             <input
               type="text"
               id="Effective"
               value=""
-              placeholder="Effective Semester"
+              placeholder="فصل التفعيل"
               required
             />
           </p>
           <p>
-            <input type="submit" id="subButton" value="Download PDF" />
+            <input type="submit" id="subButton" value="تحميل PDF" />
           </p>
         </div>
       </form>
     </div>
 
-    <!-- ============================= Bottom Section ============================= -->
+    <!-- ============================== Bottom Section ============================== -->
 
-    <div id="lastSection" class="lastContact">
+    <div id="lastSection" class="last-ar">
       <div class="contact">
-        <h3>Contact Us</h3>
-        <h5>E-mail:</h5>
+        <h3>تواصل معنا</h3>
+        <h5>البريد الإلكتروني:</h5>
         <a class="mail" href="mailto:elearning@jic.edu.sa"
           >elearning@jic.edu.sa</a
         >
@@ -334,8 +327,8 @@
         >
       </div>
 
-      <div class="location">
-        <h3>Location</h3>
+      <div class="location loc-ar">
+        <h3>الموقع</h3>
         <iframe
           class="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1203.4974097941677!2d49.56601222923024!3d27.108071992722866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e350fba56d39dc7%3A0x900a45eac9dc3b45!2z2YXYsdmD2LIg2KfZhNiq2LnZhNmK2YUg2KfZhNil2YTZg9iq2LHZiNmG2Yog2YTZhNi62Kkg2KfZhNil2YbYrNmE2YrYstmK2Kk!5e1!3m2!1sen!2ssa!4v1603266953066!5m2!1sen!2ssa"
@@ -345,16 +338,17 @@
           aria-hidden="false"
           tabindex="0"
         ></iframe>
-        <div style="color: #f8f8f8; margin-top: 12px">
+        <div style="color: #f8f8f8; margin-top: 12px; text-align: right">
           <p>
-            Kingdom of Saudi Arabia <br />
-            P.O. Box 10001 Jubail Industrial City 31961
+            المملكة العربية السعودية <br />
+            ص . ب 10001 مدينة الجبيل الصناعية 31961
           </p>
         </div>
       </div>
+
+      <p class="rights"></p>
     </div>
 
-    <p class="rights"></p>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -398,7 +392,8 @@
         var Effective = $("#Effective").val();
 
         //doc.text(width, height, "");
-        doc.text(120, 67.5, courseTo);
+        //doc.text(, );
+        doc.text(courseTo, 192, 90, null, null, "right");
 
         doc.text(62.6, 113, title);
         doc.text(162.2, 113, code);

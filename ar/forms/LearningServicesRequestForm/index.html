@@ -11,9 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../../style.css" />
-    <link rel="stylesheet" href="../../media.css" />
-    <link rel="stylesheet" href="../../keyframes.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/media.css" />
+    <link rel="stylesheet" href="/keyframes.css" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -27,27 +27,27 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="../../favicon/apple-touch-icon.png"
+      href="/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../../favicon/favicon-32x32.png"
+      href="/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="../../favicon/favicon-16x16.png"
+      href="/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="../../favicon/site.webmanifest" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
     <link
       rel="mask-icon"
-      href="../../favicon/safari-pinned-tab.svg"
+      href="/favicon/safari-pinned-tab.svg"
       color="#5bbad5"
     />
-    <link rel="shortcut icon" href="../../favicon/favicon.ico" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="msapplication-config" content="favicon/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
@@ -103,28 +103,19 @@
     <script src="../jspdf.umd.min.js"></script>
     <script src="../jspdf.debug.js"></script>
 
-    <title>Learning Management System Services Request Form</title>
+    <title>نموذج طلب خدمات نظام التعلم الإلكتروني</title>
   </head>
 
-  <body>
+  <body dir="rtl" class="bar">
     <div class="topbar">
-      <div class="form-group">
+      <div class="form-group form-ar">
         <select class="form-control" onchange="location = this.value;">
-          <option value="" disabled selected style="text-align: right">
-            اللغة
-          </option>
-          <option value="ar/RequestCourseForm/">العربية</option>
-          <option value="">English</option>
+          <option value="" selected>العربية</option>
+          <option value="/forms/LearningServicesRequestForm/">English</option>
         </select>
       </div>
-      <a href="../../"
-        ><img class="logo" src="../../images/Logo.png" alt="logo"
-      /></a>
-      <img
-        class="royalLogo"
-        src="../../images/RoyalLogo.png"
-        alt="Royal Logo"
-      />
+      <a href="/"><img class="logo" src="/images/Logo.png" alt="logo" /></a>
+      <img class="royalLogo" src="/images/RoyalLogo.png" alt="Royal Logo" />
 
       <nav class="navbar navbar-expand-lg navbar-dark">
         <button
@@ -139,12 +130,14 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav nav-ar">
             <li class="nav-item">
-              <a class="nav-link" href="../../">Home</a>
+              <a class="nav-link" href="/"
+                >الرئيسية <span class="sr-only">(current)</span></a
+              >
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="../">e-Learning Forms</a>
+              <a class="nav-link" href="../">نماذج التعليم الإلكتروني</a>
             </li>
 
             <li class="nav-item">
@@ -156,10 +149,10 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../../faq/">FAQ</a>
+              <a class="nav-link" href="/ar/faq/">الأسئلة الشائعة</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../../contactus/">Contact Us</a>
+              <a class="nav-link" href="/ar/contactus/">تواصل معنا</a>
             </li>
 
             <li class="nav-item dropdown nav-lang">
@@ -172,20 +165,23 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Language
+                العربية
               </a>
               <div
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a class="dropdown-item" href="ar/RequestCourseForm/"
-                  >العربية</a
+                <a class="dropdown-item" href="">العربية</a>
+                <a
+                  class="dropdown-item"
+                  href="/forms/LearningServicesRequestForm/"
+                  >English</a
                 >
-                <a class="dropdown-item" href="#">English</a>
               </div>
             </li>
           </ul>
-          <form class="form-inline ml-auto">
+
+          <form class="form-inline mr-auto">
             <input
               class="form-control mr-sm-2"
               type="search"
@@ -193,7 +189,7 @@
               aria-label="Search"
             />
             <button class="btn searchBtn my-2 my-sm-0" type="submit">
-              Search
+              بحث
             </button>
           </form>
         </div>
@@ -203,41 +199,47 @@
     <!-- ============================== Top Section ============================== -->
 
     <div class="wrapper">
-      <h1 style="text-align: center; margin-top: 50px">
-        Learning Management System Services Request Form
+      <h1 style="text-align: center; margin-top: 50px; margin-bottom: 85px">
+        نموذج طلب خدمات نظام التعلم الإلكتروني
       </h1>
-      <form id="Form" class="fillingForm">
-        <h2>Applicant Information</h2>
+      <form id="Form" class="fillingForm fF-ar" action="">
+        <h2>معلومات مقدم الطلب</h2>
         <div class="inputs">
           <p>
-            <label for="Name">Name: </label>
-            <input type="text" id="Name" value="" placeholder="Name" required />
+            <label for="Name">الاسم: </label>
+            <input
+              type="text"
+              id="Name"
+              value=""
+              placeholder="الاسم"
+              required
+            />
           </p>
 
           <p>
-            <label for="ID No">ID No: </label>
+            <label for="ID No">الرقم الوظیفي: </label>
             <input
               type="text"
               id="IdNo"
               value=""
-              placeholder="ID No"
+              placeholder="الرقم الوظیفي"
               required
             />
           </p>
 
           <p>
-            <label for="name">Phone Ex:</label>
+            <label for="name">التحویلة:</label>
             <input
               type="text"
               id="PhoneEx"
               value=""
-              placeholder="Phone Ex"
+              placeholder="التحویلة"
               required
             />
           </p>
 
           <p>
-            <label for="Institute">Institute: </label>
+            <label for="Institute">المؤسسة: </label>
             <select class="Institute" required>
               <option value="" disabled selected>-----</option>
               <option value="JUC">JUC</option>
@@ -248,83 +250,83 @@
           </p>
 
           <p>
-            <label for="Department">Department: </label>
+            <label for="Department">القسم: </label>
             <input
               type="text"
               id="Department"
               value=""
-              placeholder="Department"
+              placeholder="القسم"
               required
             />
           </p>
 
           <p>
-            <label for="E-Mail">E-Mail:</label>
+            <label for="E-Mail">البرید:</label>
             <input
               type="text"
               id="E-Mail"
               value=""
-              placeholder="E-Mail"
+              placeholder="البرید"
               required
             />
           </p>
 
           <p>
-            <label for="Date">Date:</label>
+            <label for="Date">التاریخ:</label>
             <input type="date" id="Date" value="" required />
           </p>
         </div>
 
-        <h2>Request Information</h2>
+        <h2>معلومات الطلب</h2>
         <div class="inputs">
           <p style="margin-bottom: 0">
-            <label for="Request Type">Request Type: </label>
+            <label for="Request Type">نوع الطلب: </label>
             <select class="RequestType" required>
               <option value="" disabled selected>-----</option>
-              <option value="Test">Test</option>
-              <option value="Survey">Survey</option>
-              <option value="Meeting">Meeting</option>
-              <option value="Other">Other</option>
+              <option value="Test">إختبار</option>
+              <option value="Survey">إستبيان</option>
+              <option value="Meeting">إجتماع</option>
+              <option value="Other">أخرى</option>
             </select>
           </p>
 
           <p id="OtherInput" style="display: none; margin-bottom: 0">
             <label for="" style="height: 0px"> </label>
-            <input type="text" id="other" value="" placeholder="Specify" />
+            <input type="text" id="other" value="" placeholder="حدد" />
           </p>
         </div>
 
         <div class="inputs" style="margin-top: -53px">
           <p>
-            <label for="Number of Participants">Number of Participants:</label>
+            <label for="Number of Participants">عدد المشاركین:</label>
             <input
               type="number"
               id="Participants"
               value=""
-              placeholder="Number of Participants"
+              placeholder="عدد المشاركین"
               required
             />
           </p>
         </div>
         <div class="inputs" style="margin-top: -52px">
           <p>
-            <label for="Duration">Duration:</label>
+            <label for="Duration">المدة:</label>
             <input
               type="text"
               id="Duration"
               value=""
-              placeholder="Duration"
+              placeholder="المدة"
               required
             />
           </p>
 
           <p>
-            <label for="Reason">Reason:</label>
+            <label for="Reason">السبب:</label>
             <input
               type="text"
               id="Reason"
               value=""
-              placeholder="Reason"
+              placeholder="السبب"
               required
             />
           </p>
@@ -336,12 +338,12 @@
       </form>
     </div>
 
-    <!-- ============================= Bottom Section ============================= -->
+    <!-- ============================== Bottom Section ============================== -->
 
-    <div id="lastSection" class="lastContact">
+    <div id="lastSection" class="last-ar">
       <div class="contact">
-        <h3>Contact Us</h3>
-        <h5>E-mail:</h5>
+        <h3>تواصل معنا</h3>
+        <h5>البريد الإلكتروني:</h5>
         <a class="mail" href="mailto:elearning@jic.edu.sa"
           >elearning@jic.edu.sa</a
         >
@@ -355,8 +357,8 @@
         >
       </div>
 
-      <div class="location">
-        <h3>Location</h3>
+      <div class="location loc-ar">
+        <h3>الموقع</h3>
         <iframe
           class="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1203.4974097941677!2d49.56601222923024!3d27.108071992722866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e350fba56d39dc7%3A0x900a45eac9dc3b45!2z2YXYsdmD2LIg2KfZhNiq2LnZhNmK2YUg2KfZhNil2YTZg9iq2LHZiNmG2Yog2YTZhNi62Kkg2KfZhNil2YbYrNmE2YrYstmK2Kk!5e1!3m2!1sen!2ssa!4v1603266953066!5m2!1sen!2ssa"
@@ -366,16 +368,17 @@
           aria-hidden="false"
           tabindex="0"
         ></iframe>
-        <div style="color: #f8f8f8; margin-top: 12px">
+        <div style="color: #f8f8f8; margin-top: 12px; text-align: right">
           <p>
-            Kingdom of Saudi Arabia <br />
-            P.O. Box 10001 Jubail Industrial City 31961
+            المملكة العربية السعودية <br />
+            ص . ب 10001 مدينة الجبيل الصناعية 31961
           </p>
         </div>
       </div>
+
+      <p class="rights"></p>
     </div>
 
-    <p class="rights"></p>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

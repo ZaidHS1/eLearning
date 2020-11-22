@@ -74,9 +74,26 @@ $(document).ready(function () {
         obj.find(".fas").addClass("arrow-down");
       }
     }, 0.01);
+
+    // ========================= Arabic Language arrow ====================
+
+    setTimeout(function () {
+      var myClass = obj.attr("class");
+      if (myClass.match("collapsed")) {
+        obj.find(".arArrow").addClass("arArrow-left");
+        obj.find(".arArrow").removeClass("arArrow-down");
+      } else {
+        $(".arArrow-down").addClass("arArrow-left");
+        $(".arArrow").removeClass("arArrow-down");
+
+        obj.find(".arArrow").removeClass("arArrow-left");
+        obj.find(".arArrow").addClass("arArrow-down");
+      }
+    }, 0.01);
   });
 
   // ========================= FAQ arrow ====================
+
   // $(window).resize(function() {
   //   if ($(window).width() < 960) {
   //      alert('Less than 960');

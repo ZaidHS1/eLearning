@@ -30,6 +30,14 @@
   animation: arrowRight 0.3s forwards 0s ease;
 }
 
+.arArrow-down {
+  animation: arArrowDown 0.3s forwards 0s ease;
+}
+
+.arArrow-left {
+  animation: arArrowLeft 0.3s forwards 0s ease;
+}
+
 /* ---------------------------------------- */
 
 @keyframes fadein {
@@ -80,5 +88,23 @@
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes arArrowDown {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+
+@keyframes arArrowLeft {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }
