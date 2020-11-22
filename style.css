@@ -420,6 +420,7 @@ input {
 
 .nav-item {
   padding: 6px;
+  transition: 0.3s;
 }
 
 .nav-lang {
