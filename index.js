@@ -77,14 +77,37 @@ $(document).ready(function () {
   });
 
   // ========================= FAQ arrow ====================
-  // $(window).resize(function() {
-  //   if ($(window).width() < 960) {
-  //      alert('Less than 960');
-  //   }
-  //  else {
-  //     alert('More than 960');
-  //  }
-  // });
+
+  function windowSize() {
+    if ($(window).width() > 1267) {
+      $(".googleMap").attr("width", "700");
+      $(".googleMap").attr("height", "450");
+    } else if ($(window).width() < 1267 && $(window).width() > 1149) {
+      $(".googleMap").attr("width", "600");
+      $(".googleMap").attr("height", "400");
+    } else if ($(window).width() < 1149 && $(window).width() > 827) {
+      $(".googleMap").attr("width", "750");
+      $(".googleMap").attr("height", "450");
+    } else if ($(window).width() < 827 && $(window).width() > 585) {
+      $(".googleMap").attr("width", "550");
+      $(".googleMap").attr("height", "450");
+    } else if ($(window).width() < 585 && $(window).width() > 420) {
+      $(".googleMap").attr("width", "400");
+      $(".googleMap").attr("height", "300");
+    } else if ($(window).width() < 420 && $(window).width() > 320) {
+      $(".googleMap").attr("width", "300");
+      $(".googleMap").attr("height", "250");
+    } else if ($(window).width() < 320) {
+      $(".googleMap").attr("width", "270");
+      $(".googleMap").attr("height", "250");
+    }
+  }
+
+  windowSize();
+
+  $(window).resize(function () {
+    windowSize();
+  });
 
   // ========================= Adding More Fields ====================
   var counter = 3;

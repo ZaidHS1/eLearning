@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/media.css" />
     <link rel="stylesheet" href="/keyframes.css" />
+    <link rel="stylesheet" href="/material-design-iconic-font.min.css" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -51,10 +52,6 @@
     <meta name="msapplication-config" content="favicon/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
-    />
     <!-- Start of Async Callbell Code -->
     <script>
       window.callbellSettings = {
@@ -189,28 +186,85 @@
     </div>
 
     <div class="wrapper contwrapper" style="text-align: right">
-      <h1>تواصل معنا</h1>
-      <p class="subhead">للمساعدة يرجى التواصل معنا عبر</p>
-      <div class="conMail con-ar">
-        <h4><strong>البريد الإلكتروني:</strong></h4>
-        <a class="mail" href="mailto:elearning@jic.edu.sa"
-          >elearning@jic.edu.sa</a
-        >
-        <br />
-        <a class="mail" href="mailto:elearning@ucj.edu.sa"
-          >elearning@ucj.edu.sa</a
-        >
-        <br />
-        <a class="mail" href="mailto:elearning@jti.edu.sa"
-          >elearning@jti.edu.sa</a
-        >
-      </div>
+      <div class="row">
+        <div class="col" style="margin-top: 50px; width: 447px">
+          <h1>تواصل معنا</h1>
 
-      <div class="ContactWhats conwh-ar">
-        <h4><strong>واتساب:</strong></h4>
-        <a class="whats" href="https://wa.me/message/HHIRNKNSFUSZA1"
-          ><i class="zmdi zmdi-whatsapp" style="font-size: 3.5rem"></i
-        ></a>
+          <p class="subhead">للمساعدة يرجى التواصل معنا عبر</p>
+
+          <div
+            class="row"
+            style="width: 388px; margin-top: 70px; margin-right: 0px"
+          >
+            <div class="col" style="display: contents">
+              <div class="conMail">
+                <div class="dropdown" style="display: inline">
+                  <button
+                    style="padding: 5px 22px"
+                    class="btn"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <i class="zmdi zmdi-email" style="margin-left: 10px"></i
+                    >البريد الإلكتروني
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="mailto:elearning@jic.edu.sa"
+                      >elearning@jic.edu.sa</a
+                    >
+                    <a class="dropdown-item" href="mailto:elearning@ucj.edu.sa"
+                      >elearning@ucj.edu.sa</a
+                    >
+                    <a class="dropdown-item" href="mailto:elearning@jti.edu.sa"
+                      >elearning@jti.edu.sa</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <button type="button" class="btn">
+                <a class="whats" href="https://wa.me/message/HHIRNKNSFUSZA1"
+                  ><i
+                    class="zmdi zmdi-whatsapp"
+                    style="margin-left: 10px; font-size: 1.1rem"
+                  ></i
+                  >WhatsApp</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="PO">
+            <i class="zmdi zmdi-gps-dot" style="font-size: 1.5rem"></i>
+            <div style="margin-top: 10px; margin-right: 30px">
+              <p style="margin-bottom: 0">المملكة العربية السعودية</p>
+              <p style="margin: 0">ص . ب 10001 مدينة الجبيل الصناعية 31961</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" style="margin-top: 50px">
+          <div class="mainMap">
+            <iframe
+              class="googleMap"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.019172425597!2d49.56586871649872!3d27.107671830569107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e350fba56d39dc7%3A0x900a45eac9dc3b45!2z2YXYsdmD2LIg2KfZhNiq2LnZhNmK2YUg2KfZhNil2YTZg9iq2LHZiNmG2Yog2YTZhNi62Kkg2KfZhNil2YbYrNmE2YrYstmK2Kk!5e0!3m2!1sen!2ssa!4v1606106993161!5m2!1sen!2ssa"
+              width="700"
+              height="450"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -270,6 +324,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
-    <script src="../index.js"></script>
+    <script src="/ar/index.js"></script>
   </body>
 </html>

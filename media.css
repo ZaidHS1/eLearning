@@ -1,8 +1,23 @@
+@media only screen and (max-width: 1766px) {
+  .contwrapper {
+    margin-left: 200px !important;
+    margin-right: 200px !important;
+  }
+}
+
 @media only screen and (max-width: 1721px) {
   .forms-ar {
     margin-right: unset;
   }
 }
+
+@media only screen and (max-width: 1566px) {
+  .contwrapper {
+    margin-left: 100px !important;
+    margin-right: 100px !important;
+  }
+}
+
 @media only screen and (max-width: 1455px) {
   .word {
     margin: 50px 200px 0 100px;
@@ -29,6 +44,13 @@
   }
 }
 
+@media only screen and (max-width: 1366px) {
+  .contwrapper {
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+  }
+}
+
 @media only screen and (max-width: 1351px) {
   .word {
     margin: 50px 100px 0 100px;
@@ -41,11 +63,6 @@
 }
 
 @media only screen and (max-width: 1256px) {
-  .contwrapper {
-    margin-left: 100px !important;
-    margin-right: 100px !important;
-  }
-
   .word {
     position: relative;
     left: 0;
@@ -299,6 +316,10 @@
     top: 200px;
   }
 
+  .contwrapper {
+    margin-left: 20px !important;
+  }
+
   .form-group .form-control {
     position: relative;
     bottom: -265px;
@@ -353,13 +374,6 @@
     margin-left: 0px;
     margin-right: 0px;
   }
-
-  .ContactWhats {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 50px;
-  }
-
   ul {
     font-size: 15px !important;
   }
