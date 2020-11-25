@@ -173,18 +173,21 @@ $(document).ready(function () {
     $("#TextBoxDiv" + counter).remove();
     $("#addButton").prop("disabled", false);
   });
-});
-// ========================= Adding More Fields ====================
-$(window).scroll(function () {
-  var scroll = $(window).scrollTop();
 
-  if (scroll >= 150) {
-    $(".obj").addClass("skew");
-    $(".vis").addClass("skew2");
-    $(".mis").addClass("skew3");
-  }
+  // ========================= Adding More Fields ====================
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
 
-  if (scroll >= 600) {
-    $(".service").addClass("fadeinleft");
-  }
+    if (scroll >= 150) {
+      $(".obj").addClass("skew");
+      $(".vis").addClass("skew2");
+      $(".mis").addClass("skew3");
+    }
+
+    if (scroll >= 600) {
+      $(".service").addClass("fadeinleft");
+    }
+  });
+
+  // ========================= Adding More Fields ====================
 });
