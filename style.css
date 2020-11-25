@@ -126,6 +126,10 @@ input {
   padding: 5px 54px;
 }
 
+#dropdownMenuButton[type="button"][disabled] {
+  opacity: 1;
+}
+
 /* ========================= ids ==================== */
 
 /* ========================= Classes ==================== */
