@@ -6,27 +6,24 @@ $(document).ready(function () {
   }
 
   //============================== search ==================================
+
   $("#filter").on("keyup", function () {
     var value = $(this).val().toLowerCase();
     $(".formList li").filter(function () {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
     });
   });
-
-  $("d").click(function () {
-    $("p:first").addClass("intro");
-  });
   //============================= search ===================================
 
   //=============================== highlight =================================
 
   $(".sidenav a").click(function () {
-    $($(this).attr("href"))
-      .addClass("highlight")
-      .delay(1000)
-      .queue(function () {
-        $(this).removeClass("highlight").dequeue();
-      });
+    var selected = $(this).attr("href");
+    $(selected).addClass("highlight");
+
+    setTimeout(function () {
+      $(selected).removeClass("highlight");
+    }, 1000);
   });
 
   //================================== highlight ==============================
@@ -110,6 +107,7 @@ $(document).ready(function () {
   });
 
   // ========================= Adding More Fields ====================
+
   var counter = 3;
 
   $("#addButton").click(function () {
@@ -142,6 +140,8 @@ $(document).ready(function () {
       $("#addButton").prop("disabled", true);
     }
   });
+  // ========================= Adding More Fields ====================
+  // ========================= Removing Fields ====================
 
   $("#removeButton").click(function () {
     counter--;
@@ -155,8 +155,10 @@ $(document).ready(function () {
     $("#TextBoxDiv" + counter).remove();
     $("#addButton").prop("disabled", false);
   });
+
+  // ========================= Removing Fields ====================
 });
-// ========================= Adding More Fields ====================
+
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
 
